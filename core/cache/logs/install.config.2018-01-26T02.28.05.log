@@ -1,0 +1,1 @@
+[2018-01-26 02:28:05] (ERROR in xPDOConnection::connect @ D:\OSPanel\domains\localhost\core\xpdo\xpdo.class.php : 3116) SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)

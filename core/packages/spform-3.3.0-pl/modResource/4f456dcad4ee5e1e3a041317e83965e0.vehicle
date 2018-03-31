@@ -1,0 +1,23 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'update_object' => false,
+  'preserve_keys' => false,
+  'namespace' => 'spform',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"spform-3.3.0-pl\\/modResource\\/4f456dcad4ee5e1e3a041317e83965e0.install.script.resolver","target":"return \'C:\\\\xampp\\\\htdocs\\\\addons\\\\assets\\\\mycomponents\\\\spform\\/_build\\/\';","name":"install.script"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e88e83a4e23ef821664e5aa616b5966d',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '4f456dcad4ee5e1e3a041317e83965e0',
+  'native_key' => 2,
+  'object' => '{"id":2,"type":"document","contentType":"text\\/html","pagetitle":"Thank You","longtitle":"Thank You","description":"Spam-proof Contact Form \\"Thank You\\" page","alias":"thankyou","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"[[!SPFResponse]]","richtext":0,"template":0,"menuindex":99,"searchable":0,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Thank You","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'pagetitle',
+  'update_object' => false,
+  'preserve_keys' => false,
+  'namespace' => 'spform',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '811a15868616244c8103990fee8f7fda',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '176ef946af84d399725343fc3c331ba8',
+  'native_key' => 1,
+  'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Contact","longtitle":"Contact Us","description":"Spam-proof Contact Form","alias":"contact","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"[[!SPForm]]","richtext":0,"template":0,"menuindex":99,"searchable":0,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Contact Us","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

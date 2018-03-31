@@ -1,0 +1,45 @@
+@import 'vars.scss';
+.content {
+	line-height: 170%;
+	margin: 35px auto;
+	font-size: 16px;
+	letter-spacing: normal;
+	text-align: left;
+	color: #222222;
+	@media($S) {
+		font-size: 14px
+	}
+	.image {
+		margin: 20px 0;
+	}
+	h1 {
+		line-height: 42px;
+		padding: 15px 0;
+		margin: 0;
+		font-size: 36px;
+		font-weight: 500;
+		color: #222222;
+}
+	.slogan {
+		line-height: 140%;
+		margin: 0px 0 45px;
+		font-size: 18px;
+		color: #9f9f9f;
+	}
+	.text {
+		line-height: 26px;
+	}
+	.callus {
+		width: 212px;
+	}
+	.list {
+		list-style: none;
+		li:before {
+			content: "•";
+			position: absolute;
+			color: red;
+			left: 40px;
+			font-size: 200%;
+		}
+	}
+}

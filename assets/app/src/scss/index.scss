@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+@import './bootsrap/bootstrap.scss';
+@import 'header.scss';
+@import 'slider.scss';
+@import 'content.scss';
+@import 'news.scss';
+@import 'pagination.scss';
+@import 'quote.scss';
+@import 'cards.scss';
+@import 'footer.scss';
+@import 'buttons.scss';
+
+#app {
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #9f9f9f;
+}
+
+.container-fluid {
+	padding: 0;
+	width: 100%;
+	max-width: 100vw;
+}

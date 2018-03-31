@@ -1,0 +1,11 @@
+[2018-03-31 16:52:56] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 1452) Error 23000 executing statement:
+INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES ('t7ukbeqb95lq6i46s5ms3s9a10', 1522504376, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5a6a682a004441.14252555_15a6a68c978abd0.99664885\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}modx.user.1.userGroups|a:1:{i:0;i:1;}newResourceTokens|a:2:{i:0;s:23:\"5a6a6a99cf09a4.43563125\";i:1;s:23:\"5a6a6ee19ab579.91819637\";}')
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 't7ukbeqb95lq6i46s5ms3s9a10' for key 'PRIMARY'
+)
+
+[2018-03-31 17:24:47] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-03-31 17:29:56] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default

@@ -1,0 +1,16 @@
+@import 'vars.scss';
+.pagination {
+	display: flex;
+	list-style: none;
+	.page-item {
+		a {
+			line-height: 86%;
+			padding: 0 20px;
+			font-size: 14px;
+			color: #9f9f9f;
+			&:hover,&.active {
+				color: #f03333;
+			}
+		}
+	}
+}
