@@ -76,7 +76,7 @@
 </head>
 <body>
     <div id="app" class="d-flex flex-column flex-wrap">
-        <div class="header container-fluid d-flex flex-row align-items-center">
+        <header class="container-fluid d-flex flex-row align-items-center">
 	<div class="container col-xs-12">
 		<div class="d-flex flex-row align-items-center justify-content-between header_items">
 			<div class="flex header_items_menu">MENU</div>
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</header>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -120,7 +120,7 @@
   ),
   'elementCache' => 
   array (
-    '[[$Header]]' => '<div class="header container-fluid d-flex flex-row align-items-center">
+    '[[$Header]]' => '<header class="container-fluid d-flex flex-row align-items-center">
 	<div class="container col-xs-12">
 		<div class="d-flex flex-row align-items-center justify-content-between header_items">
 			<div class="flex header_items_menu">MENU</div>
@@ -139,7 +139,7 @@
 			</div>
 		</div>
 	</div>
-</div>',
+</header>',
   ),
   'sourceCache' => 
   array (
@@ -157,7 +157,7 @@
           'editor_type' => 0,
           'category' => 0,
           'cache_type' => 0,
-          'snippet' => '<div class="header container-fluid d-flex flex-row align-items-center">
+          'snippet' => '<header class="container-fluid d-flex flex-row align-items-center">
 	<div class="container col-xs-12">
 		<div class="d-flex flex-row align-items-center justify-content-between header_items">
 			<div class="flex header_items_menu">MENU</div>
@@ -176,14 +176,14 @@
 			</div>
 		</div>
 	</div>
-</div>',
+</header>',
           'locked' => false,
           'properties' => 
           array (
           ),
           'static' => false,
           'static_file' => '',
-          'content' => '<div class="header container-fluid d-flex flex-row align-items-center">
+          'content' => '<header class="container-fluid d-flex flex-row align-items-center">
 	<div class="container col-xs-12">
 		<div class="d-flex flex-row align-items-center justify-content-between header_items">
 			<div class="flex header_items_menu">MENU</div>
@@ -202,7 +202,7 @@
 			</div>
 		</div>
 	</div>
-</div>',
+</header>',
         ),
         'policies' => 
         array (

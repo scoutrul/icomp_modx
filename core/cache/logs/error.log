@@ -9,3 +9,4 @@ Array
 
 [2018-03-31 17:24:47] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
 [2018-03-31 17:29:56] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-03-31 17:34:35] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 394) Error caching action map mgr/actions

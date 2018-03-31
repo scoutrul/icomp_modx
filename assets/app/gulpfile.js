@@ -7,18 +7,18 @@ var data = require('gulp-data');
 var fs = require('fs');
 
 var paths = {
-	sass: [ 'src/scss/*.scss' ],
+	sass: [ 'assets/app/src/scss/*.scss' ],
 	js: [
-		'node_modules/bootstrap/dist/js/bootstrap.min.js',
-		'node_modules/jquery/dist/jquery.min.js',
-		'node_modules/tether/dist/js/tether.min.js'
+		'assets/app/node_modules/bootstrap/dist/js/bootstrap.min.js',
+		'assets/app/node_modules/jquery/dist/jquery.min.js',
+		'assets/app/node_modules/tether/dist/js/tether.min.js'
 	],
-	jade: [ 'src/**/*.jade' ]
+	jade: [ 'assets/app/src/**/*.jade' ]
 };
 
 gulp.task('jade', function() {
 	return gulp
-		.src([ 'src/jade/index.jade', '' ])
+		.src([ 'assets/app/src/jade/index.jade', '' ])
 		.pipe(
 			data(function(file) {
 				return JSON.parse(fs.readFileSync('./data.json'));
@@ -26,26 +26,26 @@ gulp.task('jade', function() {
 		)
 		.pipe(jade())
 		.pipe(plumber())
-		.pipe(gulp.dest('dest'))
+		.pipe(gulp.dest('assets/app/dest'))
 		.pipe(browserSync.stream());
 });
 
 gulp.task('sass', function() {
 	return gulp
-		.src('src/scss/index.scss')
+		.src('assets/app/src/scss/index.scss')
 		.pipe(sass())
 		.pipe(plumber())
-		.pipe(gulp.dest('dest/css'))
+		.pipe(gulp.dest('assets/app/dest/css'))
 		.pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {
-	return gulp.src(paths.js).pipe(plumber()).pipe(gulp.dest('dest/js')).pipe(browserSync.stream());
+	return gulp.src(paths.js).pipe(plumber()).pipe(gulp.dest('assets/app/dest/js')).pipe(browserSync.stream());
 });
 
 gulp.task('serve', [ 'sass', 'jade', 'js' ], function() {
 	browserSync.init({
-		server: './dest'
+		proxy: 'localhost'
 	});
 
 	gulp.watch(paths.sass, [ 'sass' ]).on('change', browserSync.reload);
@@ -53,7 +53,7 @@ gulp.task('serve', [ 'sass', 'jade', 'js' ], function() {
 
 	gulp.watch(paths.jade, [ 'jade' ]).on('change', browserSync.reload);
 
-	gulp.watch('dest/*.html', [ 'jade' ]).on('change', browserSync.reload);
+	gulp.watch('assets/app/dest/*.html', [ 'jade' ]).on('change', browserSync.reload);
 });
 
 gulp.task('default', [ 'js', 'jade', 'sass', 'serve' ]);
