@@ -4068,6 +4068,17 @@ header {
       font-size: 14px; } }
   .content .image {
     margin: 20px 0; }
+  .content .image_expert {
+    display: flex;
+    width: fit-content;
+    border-radius: 50%;
+    overflow: hidden;
+    max-height: 160px;
+    max-width: 160px;
+    justify-content: center;
+    align-items: center; }
+    .content .image_expert img {
+      max-width: 110%; }
   .content h1 {
     line-height: 42px;
     padding: 15px 0;

@@ -25,7 +25,7 @@
     'createdby' => 1,
     'createdon' => 1516922952,
     'editedby' => 1,
-    'editedon' => 1522583670,
+    'editedon' => 1522615930,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -49,7 +49,7 @@
 <html lang="en">
 <head>
     <title>iCompliance - Корень</title>
-    <base href="[[!++site_url]]" />
+    <base href="http://localhost/" />
     <meta charset="UTF-8" />
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,7 +60,7 @@
 </head>
 <body>
     <div id="app" class="d-flex flex-column flex-wrap">
-        <header class="container-fluid d-flex flex-row align-items-center">
+    <header class="container-fluid d-flex flex-row align-items-center">
 	<div class="container col-xs-12">
 		<div class="d-flex flex-row align-items-center justify-content-between header_items">
 			<div class="flex header_items_menu">
@@ -82,7 +82,7 @@
 			</div>
 			<div class="col flex header_items_logo">
 				<div class="logo">
-					<img src="assets/app/dest/images/logo_1.svg" alt=""/>
+					<a href="/"><img src="assets/app/dest/images/logo_1.svg" alt=""/></a>
 				</div> 
 			</div> 
 			<div class="col flex d-flex flex-row justify-content-end header_items_search">
@@ -96,7 +96,7 @@
 		</div>
 	</div>
 </header>
-        <div class="slider container-fluid">
+    <div class="slider container-fluid">
 	<div id="carouselExampleIndicators" data-ride="carousel" class="carousel slide">
 		<div class="carousel-inner">
 			<div style="background-image:url(assets/app/dest/images/slide_bg.png)" class="carousel-item active">
@@ -146,95 +146,94 @@
 			</div>
 		</div>
 	</div>
-        <div class="container-fluid">
+    <div class="container-fluid">
 	<div class="container">
-		<div class="content">
-			<div class="col-12 d-flex justify-content-center">
-				<h1>Услуги</h1>
-			</div>
-			<div class="col-12">
-				<div class="cards d-flex flex-row">
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/pazzle.svg" alt="" />
-						</div>
-						<div class="title">Комплеанс</div>
-						<div class="description">Защита от недобросовестных участников торгов</div>
-						<div class="button">Узнать больше</div>
+	<div class="content">
+		<div class="col-12 d-flex justify-content-center">
+			<h1>Услуги</h1>
+		</div>
+		<div class="col-12">
+			<div class="cards d-flex flex-row uslugi">
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/pazzle.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Fas.svg" alt="" />
-						</div>
-						<div class="title">Антимонопольная практика</div>
-						<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Комплеанс</div>
+					<div class="description">Защита от недобросовестных участников торгов</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Fas.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Protect.svg" alt="" />
-						</div>
-						<div class="title">Защита по картелям</div>
-						<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Антимонопольная практика</div>
+					<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Protect.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Law_Order.svg" alt="" />
-						</div>
-						<div class="title">Корпоративный консалтинг</div>
-						<div class="description">Консультирование по тарифному регулированию</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Защита по картелям</div>
+					<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Law_Order.svg" alt="" />
 					</div>
+					<div class="title">Корпоративный консалтинг</div>
+					<div class="description">Консультирование по тарифному регулированию</div>
+					<div class="button">Узнать больше</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 	<div class="container">
-		<div class="content d-flex flex-column col-xl-7 col-lg-10">
-			<div class="image">
-				<img src="assets/app/dest/images/pazzle.svg" alt="" />
-			</div>
-			<h1>Комплеанс</h1>
-			<div class="slogan">Защита от недобросовестных участников торгов</div>
-			<div class="text">
-				<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
-					или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
-					для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
-					связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
-					надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
-					в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
-					или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
-				<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
-					серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
-					штрафа, – это уже повод задуматься.</p>
-			</div>
-			<div class="card quote">
-				<div class="header">Экспертное мнение</div>
-				<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
-					правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
-				<div
-				 class="footer">
-					<div class="name">Константин Константинопольский</div>
-					<div class="degree">Доктор наук</div>
-			</div>
+	<div class="content d-flex flex-column col-xl-7 col-lg-10 page">
+		<div class="image">
+			<img src="assets/app/dest/images/pazzle.svg" alt="" />
 		</div>
+		<h1>123Комплеанс</h1>
+		<div class="slogan">Защита от недобросовестных участников торгов</div>
 		<div class="text">
-			<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
-				бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
-				Партнеров и Клиентов мы считаем:</p>
+			<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
+				или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
+				для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
+				связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
+				надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
+				в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
+				или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
+			<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
+				серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
+				штрафа, – это уже повод задуматься.</p>
 		</div>
-		<ul class="list">
-			<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
-			<li>представительство в суде, включая обжалование решений ФАС; </li>
-			<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
-			<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
-			<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
-		</ul>
-		<div class="callus_button">
-			<img src="assets/app/dest/images/button_call.svg" alt="" />
-			<span>Связаться с нами</span>
-		</div>
+		<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
+	</div>
+</div>
+	</div>
+	<div class="text">
+		<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
+			бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
+			Партнеров и Клиентов мы считаем:</p>
+	</div>
+	<ul class="list">
+		<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
+		<li>представительство в суде, включая обжалование решений ФАС; </li>
+		<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
+		<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
+		<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
+	</ul>
+	<div class="callus_button">
+		<img src="assets/app/dest/images/button_call.svg" alt="" />
+		<span>Связаться с нами</span>
 	</div>
 </div>
 	<div class="container">
@@ -302,13 +301,107 @@
 			</li>
 			<li class="item">
 				<div class="date">23 Марта 2018</div>
-				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.) </div>
+				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.)
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="content news news_page col-xl-7 col-lg-10">
+		<h1>Новости и публикации</h1>
+		<ul class="news_list d-flex flex-wrap flex-row">
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах. Антимонопольный комплаенс в Российских реалиях </div>
+				<hr/>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Президент РФ подписал указ «Об основных оаправлениях госполитики по развитию конкуренции»</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях. Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях (Мигитко О.)</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+		</ul>
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link active">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">...</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">99</a>
 			</li>
 		</ul>
 	</div>
 </div>
 </div>
-        <footer class="container-fluid d-flex flex-row">
+    <div class="container">
+	<div class="content d-flex flex-column col-xl-9">
+		<div class="cards contacts">
+			<div class="card">
+				<div class="map">
+					<img src="assets/app/dest/images/map.png" alt="" />
+				</div>
+				<div class="address d-flex">
+					<div>
+						<div>115035, г. Москва, Кадашевская набережная, дом 26 </div>
+						<div>Телефон: 8 (495) 664-39-74</div>
+						<div>Эл. почта:
+							<a href="mailto:info@icompliance.ru">info@icompliance.ru</a>
+						</div>
+					</div>
+					<div>
+						<div class="callus_button">
+							<img src="assets/app/dest/images/button_call.svg" alt="" />
+							<span>Связаться с нами</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <footer class="container-fluid d-flex flex-row">
 	<div class="container d-flex justify-content-between flex-wrap">
 		<div class="logo">
 			<img src="assets/app/dest/images/logo_2.svg" alt="" />
@@ -336,6 +429,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
+
 ',
     '_isForward' => false,
   ),
@@ -354,6 +448,21 @@
   ),
   'elementCache' => 
   array (
+    '[[$Container_header]]' => '<!doctype html>
+<html lang="en">
+<head>
+    <title>iCompliance - Корень</title>
+    <base href="http://localhost/" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="assets/app/dest/css/index.css" />
+	<link rel="icon" type="image/svg+xml" href="assets/app/dest/favicon.ico"/>
+
+</head>
+<body>
+    <div id="app" class="d-flex flex-column flex-wrap">',
     '[[$Menu]]' => '<div class="burger">
 	<img src="assets/app/dest/images/burger_menu.svg" alt="" />
 </div>
@@ -391,7 +500,7 @@
 			</div>
 			<div class="col flex header_items_logo">
 				<div class="logo">
-					<img src="assets/app/dest/images/logo_1.svg" alt=""/>
+					<a href="/"><img src="assets/app/dest/images/logo_1.svg" alt=""/></a>
 				</div> 
 			</div> 
 			<div class="col flex d-flex flex-row justify-content-end header_items_search">
@@ -456,93 +565,101 @@
 		</div>
 	</div>',
     '[[$Services]]' => '<div class="container">
-		<div class="content">
-			<div class="col-12 d-flex justify-content-center">
-				<h1>Услуги</h1>
-			</div>
-			<div class="col-12">
-				<div class="cards d-flex flex-row">
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/pazzle.svg" alt="" />
-						</div>
-						<div class="title">Комплеанс</div>
-						<div class="description">Защита от недобросовестных участников торгов</div>
-						<div class="button">Узнать больше</div>
+	<div class="content">
+		<div class="col-12 d-flex justify-content-center">
+			<h1>Услуги</h1>
+		</div>
+		<div class="col-12">
+			<div class="cards d-flex flex-row uslugi">
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/pazzle.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Fas.svg" alt="" />
-						</div>
-						<div class="title">Антимонопольная практика</div>
-						<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Комплеанс</div>
+					<div class="description">Защита от недобросовестных участников торгов</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Fas.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Protect.svg" alt="" />
-						</div>
-						<div class="title">Защита по картелям</div>
-						<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Антимонопольная практика</div>
+					<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Protect.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Law_Order.svg" alt="" />
-						</div>
-						<div class="title">Корпоративный консалтинг</div>
-						<div class="description">Консультирование по тарифному регулированию</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Защита по картелям</div>
+					<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Law_Order.svg" alt="" />
 					</div>
+					<div class="title">Корпоративный консалтинг</div>
+					<div class="description">Консультирование по тарифному регулированию</div>
+					<div class="button">Узнать больше</div>
 				</div>
 			</div>
 		</div>
-	</div>',
+	</div>
+</div>',
+    '[[$SinglePage_quote]]' => '<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
+	</div>
+</div>',
     '[[$Page]]' => '<div class="container">
-		<div class="content d-flex flex-column col-xl-7 col-lg-10">
-			<div class="image">
-				<img src="assets/app/dest/images/pazzle.svg" alt="" />
-			</div>
-			<h1>Комплеанс</h1>
-			<div class="slogan">Защита от недобросовестных участников торгов</div>
-			<div class="text">
-				<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
-					или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
-					для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
-					связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
-					надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
-					в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
-					или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
-				<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
-					серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
-					штрафа, – это уже повод задуматься.</p>
-			</div>
-			<div class="card quote">
-				<div class="header">Экспертное мнение</div>
-				<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
-					правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
-				<div
-				 class="footer">
-					<div class="name">Константин Константинопольский</div>
-					<div class="degree">Доктор наук</div>
-			</div>
+	<div class="content d-flex flex-column col-xl-7 col-lg-10 page">
+		<div class="image">
+			<img src="assets/app/dest/images/pazzle.svg" alt="" />
 		</div>
+		<h1>123Комплеанс</h1>
+		<div class="slogan">Защита от недобросовестных участников торгов</div>
 		<div class="text">
-			<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
-				бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
-				Партнеров и Клиентов мы считаем:</p>
+			<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
+				или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
+				для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
+				связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
+				надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
+				в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
+				или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
+			<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
+				серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
+				штрафа, – это уже повод задуматься.</p>
 		</div>
-		<ul class="list">
-			<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
-			<li>представительство в суде, включая обжалование решений ФАС; </li>
-			<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
-			<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
-			<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
-		</ul>
-		<div class="callus_button">
-			<img src="assets/app/dest/images/button_call.svg" alt="" />
-			<span>Связаться с нами</span>
-		</div>
+		<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
+	</div>
+</div>
+	</div>
+	<div class="text">
+		<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
+			бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
+			Партнеров и Клиентов мы считаем:</p>
+	</div>
+	<ul class="list">
+		<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
+		<li>представительство в суде, включая обжалование решений ФАС; </li>
+		<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
+		<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
+		<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
+	</ul>
+	<div class="callus_button">
+		<img src="assets/app/dest/images/button_call.svg" alt="" />
+		<span>Связаться с нами</span>
 	</div>
 </div>',
     '[[$Experts]]' => '<div class="container">
@@ -610,100 +727,167 @@
 			</li>
 			<li class="item">
 				<div class="date">23 Марта 2018</div>
-				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.) </div>
+				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.)
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="content news news_page col-xl-7 col-lg-10">
+		<h1>Новости и публикации</h1>
+		<ul class="news_list d-flex flex-wrap flex-row">
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах. Антимонопольный комплаенс в Российских реалиях </div>
+				<hr/>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Президент РФ подписал указ «Об основных оаправлениях госполитики по развитию конкуренции»</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях. Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях (Мигитко О.)</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+		</ul>
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link active">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">...</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">99</a>
 			</li>
 		</ul>
 	</div>
 </div>',
     '[[$Content]]' => '<div class="container-fluid">
 	<div class="container">
-		<div class="content">
-			<div class="col-12 d-flex justify-content-center">
-				<h1>Услуги</h1>
-			</div>
-			<div class="col-12">
-				<div class="cards d-flex flex-row">
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/pazzle.svg" alt="" />
-						</div>
-						<div class="title">Комплеанс</div>
-						<div class="description">Защита от недобросовестных участников торгов</div>
-						<div class="button">Узнать больше</div>
+	<div class="content">
+		<div class="col-12 d-flex justify-content-center">
+			<h1>Услуги</h1>
+		</div>
+		<div class="col-12">
+			<div class="cards d-flex flex-row uslugi">
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/pazzle.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Fas.svg" alt="" />
-						</div>
-						<div class="title">Антимонопольная практика</div>
-						<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Комплеанс</div>
+					<div class="description">Защита от недобросовестных участников торгов</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Fas.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Protect.svg" alt="" />
-						</div>
-						<div class="title">Защита по картелям</div>
-						<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Антимонопольная практика</div>
+					<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Protect.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Law_Order.svg" alt="" />
-						</div>
-						<div class="title">Корпоративный консалтинг</div>
-						<div class="description">Консультирование по тарифному регулированию</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Защита по картелям</div>
+					<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Law_Order.svg" alt="" />
 					</div>
+					<div class="title">Корпоративный консалтинг</div>
+					<div class="description">Консультирование по тарифному регулированию</div>
+					<div class="button">Узнать больше</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 	<div class="container">
-		<div class="content d-flex flex-column col-xl-7 col-lg-10">
-			<div class="image">
-				<img src="assets/app/dest/images/pazzle.svg" alt="" />
-			</div>
-			<h1>Комплеанс</h1>
-			<div class="slogan">Защита от недобросовестных участников торгов</div>
-			<div class="text">
-				<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
-					или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
-					для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
-					связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
-					надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
-					в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
-					или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
-				<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
-					серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
-					штрафа, – это уже повод задуматься.</p>
-			</div>
-			<div class="card quote">
-				<div class="header">Экспертное мнение</div>
-				<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
-					правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
-				<div
-				 class="footer">
-					<div class="name">Константин Константинопольский</div>
-					<div class="degree">Доктор наук</div>
-			</div>
+	<div class="content d-flex flex-column col-xl-7 col-lg-10 page">
+		<div class="image">
+			<img src="assets/app/dest/images/pazzle.svg" alt="" />
 		</div>
+		<h1>123Комплеанс</h1>
+		<div class="slogan">Защита от недобросовестных участников торгов</div>
 		<div class="text">
-			<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
-				бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
-				Партнеров и Клиентов мы считаем:</p>
+			<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
+				или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
+				для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
+				связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
+				надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
+				в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
+				или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
+			<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
+				серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
+				штрафа, – это уже повод задуматься.</p>
 		</div>
-		<ul class="list">
-			<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
-			<li>представительство в суде, включая обжалование решений ФАС; </li>
-			<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
-			<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
-			<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
-		</ul>
-		<div class="callus_button">
-			<img src="assets/app/dest/images/button_call.svg" alt="" />
-			<span>Связаться с нами</span>
-		</div>
+		<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
+	</div>
+</div>
+	</div>
+	<div class="text">
+		<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
+			бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
+			Партнеров и Клиентов мы считаем:</p>
+	</div>
+	<ul class="list">
+		<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
+		<li>представительство в суде, включая обжалование решений ФАС; </li>
+		<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
+		<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
+		<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
+	</ul>
+	<div class="callus_button">
+		<img src="assets/app/dest/images/button_call.svg" alt="" />
+		<span>Связаться с нами</span>
 	</div>
 </div>
 	<div class="container">
@@ -771,11 +955,105 @@
 			</li>
 			<li class="item">
 				<div class="date">23 Марта 2018</div>
-				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.) </div>
+				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.)
+				</div>
 			</li>
 		</ul>
 	</div>
 </div>
+<div class="container">
+	<div class="content news news_page col-xl-7 col-lg-10">
+		<h1>Новости и публикации</h1>
+		<ul class="news_list d-flex flex-wrap flex-row">
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах. Антимонопольный комплаенс в Российских реалиях </div>
+				<hr/>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Президент РФ подписал указ «Об основных оаправлениях госполитики по развитию конкуренции»</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях. Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях (Мигитко О.)</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+		</ul>
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link active">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">...</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">99</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>',
+    '[[$Contacts]]' => '<div class="container">
+	<div class="content d-flex flex-column col-xl-9">
+		<div class="cards contacts">
+			<div class="card">
+				<div class="map">
+					<img src="assets/app/dest/images/map.png" alt="" />
+				</div>
+				<div class="address d-flex">
+					<div>
+						<div>115035, г. Москва, Кадашевская набережная, дом 26 </div>
+						<div>Телефон: 8 (495) 664-39-74</div>
+						<div>Эл. почта:
+							<a href="mailto:info@icompliance.ru">info@icompliance.ru</a>
+						</div>
+					</div>
+					<div>
+						<div class="callus_button">
+							<img src="assets/app/dest/images/button_call.svg" alt="" />
+							<span>Связаться с нами</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>',
     '[[$Footer]]' => '<footer class="container-fluid d-flex flex-row">
 	<div class="container d-flex justify-content-between flex-wrap">
@@ -799,11 +1077,82 @@
 		</div>
 	</div>
 </footer>',
+    '[[$Container_footer]]' => '    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+',
   ),
   'sourceCache' => 
   array (
     'modChunk' => 
     array (
+      'Container_header' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 24,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'Container_header',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '<!doctype html>
+<html lang="en">
+<head>
+    <title>iCompliance - [[*pagetitle]]</title>
+    <base href="[[++site_url]]" />
+    <meta charset="[[++modx_charset]]" />
+    <meta name="description" content="[[*description]]" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="assets/app/dest/css/index.css" />
+	<link rel="icon" type="image/svg+xml" href="assets/app/dest/favicon.ico"/>
+
+</head>
+<body>
+    <div id="app" class="d-flex flex-column flex-wrap">',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '<!doctype html>
+<html lang="en">
+<head>
+    <title>iCompliance - [[*pagetitle]]</title>
+    <base href="[[++site_url]]" />
+    <meta charset="[[++modx_charset]]" />
+    <meta name="description" content="[[*description]]" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="assets/app/dest/css/index.css" />
+	<link rel="icon" type="image/svg+xml" href="assets/app/dest/favicon.ico"/>
+
+</head>
+<body>
+    <div id="app" class="d-flex flex-column flex-wrap">',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
       'Header' => 
       array (
         'fields' => 
@@ -824,7 +1173,7 @@
 			</div>
 			<div class="col flex header_items_logo">
 				<div class="logo">
-					<img src="assets/app/dest/images/logo_1.svg" alt=""/>
+					<a href="/"><img src="assets/app/dest/images/logo_1.svg" alt=""/></a>
 				</div> 
 			</div> 
 			<div class="col flex d-flex flex-row justify-content-end header_items_search">
@@ -852,7 +1201,7 @@
 			</div>
 			<div class="col flex header_items_logo">
 				<div class="logo">
-					<img src="assets/app/dest/images/logo_1.svg" alt=""/>
+					<a href="/"><img src="assets/app/dest/images/logo_1.svg" alt=""/></a>
 				</div> 
 			</div> 
 			<div class="col flex d-flex flex-row justify-content-end header_items_search">
@@ -1139,48 +1488,48 @@
           'category' => 0,
           'cache_type' => 0,
           'snippet' => '<div class="container">
-		<div class="content">
-			<div class="col-12 d-flex justify-content-center">
-				<h1>Услуги</h1>
-			</div>
-			<div class="col-12">
-				<div class="cards d-flex flex-row">
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/pazzle.svg" alt="" />
-						</div>
-						<div class="title">Комплеанс</div>
-						<div class="description">Защита от недобросовестных участников торгов</div>
-						<div class="button">Узнать больше</div>
+	<div class="content">
+		<div class="col-12 d-flex justify-content-center">
+			<h1>Услуги</h1>
+		</div>
+		<div class="col-12">
+			<div class="cards d-flex flex-row uslugi">
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/pazzle.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Fas.svg" alt="" />
-						</div>
-						<div class="title">Антимонопольная практика</div>
-						<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Комплеанс</div>
+					<div class="description">Защита от недобросовестных участников торгов</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Fas.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Protect.svg" alt="" />
-						</div>
-						<div class="title">Защита по картелям</div>
-						<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Антимонопольная практика</div>
+					<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Protect.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Law_Order.svg" alt="" />
-						</div>
-						<div class="title">Корпоративный консалтинг</div>
-						<div class="description">Консультирование по тарифному регулированию</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Защита по картелям</div>
+					<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Law_Order.svg" alt="" />
 					</div>
+					<div class="title">Корпоративный консалтинг</div>
+					<div class="description">Консультирование по тарифному регулированию</div>
+					<div class="button">Узнать больше</div>
 				</div>
 			</div>
 		</div>
-	</div>',
+	</div>
+</div>',
           'locked' => false,
           'properties' => 
           array (
@@ -1188,48 +1537,48 @@
           'static' => false,
           'static_file' => '',
           'content' => '<div class="container">
-		<div class="content">
-			<div class="col-12 d-flex justify-content-center">
-				<h1>Услуги</h1>
-			</div>
-			<div class="col-12">
-				<div class="cards d-flex flex-row">
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/pazzle.svg" alt="" />
-						</div>
-						<div class="title">Комплеанс</div>
-						<div class="description">Защита от недобросовестных участников торгов</div>
-						<div class="button">Узнать больше</div>
+	<div class="content">
+		<div class="col-12 d-flex justify-content-center">
+			<h1>Услуги</h1>
+		</div>
+		<div class="col-12">
+			<div class="cards d-flex flex-row uslugi">
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/pazzle.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Fas.svg" alt="" />
-						</div>
-						<div class="title">Антимонопольная практика</div>
-						<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Комплеанс</div>
+					<div class="description">Защита от недобросовестных участников торгов</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Fas.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Protect.svg" alt="" />
-						</div>
-						<div class="title">Защита по картелям</div>
-						<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Антимонопольная практика</div>
+					<div class="description">Представительство в ФАС России, государственных, судебных и правоохранительных органах</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Protect.svg" alt="" />
 					</div>
-					<div class="card">
-						<div class="image">
-							<img src="assets/app/dest/images/Law_Order.svg" alt="" />
-						</div>
-						<div class="title">Корпоративный консалтинг</div>
-						<div class="description">Консультирование по тарифному регулированию</div>
-						<div class="button">Узнать больше</div>
+					<div class="title">Защита по картелям</div>
+					<div class="description">Защита по делам о картелях и другим антиконкурентным соглашениям</div>
+					<div class="button">Узнать больше</div>
+				</div>
+				<div class="card">
+					<div class="image">
+						<img src="assets/app/dest/images/Law_Order.svg" alt="" />
 					</div>
+					<div class="title">Корпоративный консалтинг</div>
+					<div class="description">Консультирование по тарифному регулированию</div>
+					<div class="button">Узнать больше</div>
 				</div>
 			</div>
 		</div>
-	</div>',
+	</div>
+</div>',
         ),
         'policies' => 
         array (
@@ -1259,50 +1608,41 @@
           'category' => 0,
           'cache_type' => 0,
           'snippet' => '<div class="container">
-		<div class="content d-flex flex-column col-xl-7 col-lg-10">
-			<div class="image">
-				<img src="assets/app/dest/images/pazzle.svg" alt="" />
-			</div>
-			<h1>Комплеанс</h1>
-			<div class="slogan">Защита от недобросовестных участников торгов</div>
-			<div class="text">
-				<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
-					или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
-					для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
-					связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
-					надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
-					в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
-					или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
-				<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
-					серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
-					штрафа, – это уже повод задуматься.</p>
-			</div>
-			<div class="card quote">
-				<div class="header">Экспертное мнение</div>
-				<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
-					правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
-				<div
-				 class="footer">
-					<div class="name">Константин Константинопольский</div>
-					<div class="degree">Доктор наук</div>
-			</div>
+	<div class="content d-flex flex-column col-xl-7 col-lg-10 page">
+		<div class="image">
+			<img src="assets/app/dest/images/pazzle.svg" alt="" />
 		</div>
+		<h1>123Комплеанс</h1>
+		<div class="slogan">Защита от недобросовестных участников торгов</div>
 		<div class="text">
-			<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
-				бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
-				Партнеров и Клиентов мы считаем:</p>
+			<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
+				или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
+				для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
+				связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
+				надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
+				в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
+				или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
+			<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
+				серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
+				штрафа, – это уже повод задуматься.</p>
 		</div>
-		<ul class="list">
-			<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
-			<li>представительство в суде, включая обжалование решений ФАС; </li>
-			<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
-			<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
-			<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
-		</ul>
-		<div class="callus_button">
-			<img src="assets/app/dest/images/button_call.svg" alt="" />
-			<span>Связаться с нами</span>
-		</div>
+		[[$SinglePage_quote]]
+	</div>
+	<div class="text">
+		<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
+			бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
+			Партнеров и Клиентов мы считаем:</p>
+	</div>
+	<ul class="list">
+		<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
+		<li>представительство в суде, включая обжалование решений ФАС; </li>
+		<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
+		<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
+		<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
+	</ul>
+	<div class="callus_button">
+		<img src="assets/app/dest/images/button_call.svg" alt="" />
+		<span>Связаться с нами</span>
 	</div>
 </div>',
           'locked' => false,
@@ -1312,50 +1652,93 @@
           'static' => false,
           'static_file' => '',
           'content' => '<div class="container">
-		<div class="content d-flex flex-column col-xl-7 col-lg-10">
-			<div class="image">
-				<img src="assets/app/dest/images/pazzle.svg" alt="" />
-			</div>
-			<h1>Комплеанс</h1>
-			<div class="slogan">Защита от недобросовестных участников торгов</div>
-			<div class="text">
-				<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
-					или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
-					для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
-					связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
-					надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
-					в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
-					или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
-				<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
-					серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
-					штрафа, – это уже повод задуматься.</p>
-			</div>
-			<div class="card quote">
-				<div class="header">Экспертное мнение</div>
-				<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
-					правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
-				<div
-				 class="footer">
-					<div class="name">Константин Константинопольский</div>
-					<div class="degree">Доктор наук</div>
-			</div>
+	<div class="content d-flex flex-column col-xl-7 col-lg-10 page">
+		<div class="image">
+			<img src="assets/app/dest/images/pazzle.svg" alt="" />
 		</div>
+		<h1>123Комплеанс</h1>
+		<div class="slogan">Защита от недобросовестных участников торгов</div>
 		<div class="text">
-			<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
-				бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
-				Партнеров и Клиентов мы считаем:</p>
+			<p>Если говорить просто, то любой «комплаенс» представляет собой соответствие каким-либо внутренним или внешним требованиям
+				или нормам. Это явление приходит к нам из прогрессивных западных стран и в ближайшем будущем комплаенс-системы будут
+				для нас весьма обыденными и привычными. Под соответствием подразумевается часть системы управления/контроля в организации,
+				связанная с рисками несоответствия, несоблюдения требований законодательства, нормативных документов, правил и стандартов
+				надзорных органов, отраслевых ассоциаций и саморегулируемых организаций, кодексов поведения и т.д. Такие риски несоответствия
+				в конечном итоге могут проявляться в форме применения юридических санкций или санкций регулирующих органов, финансовых
+				или репутационных потерь как результат несоответствия законам, общепринятым правилам и стандартам.</p>
+			<p>И пусть риски связанные с возможными нарушениями санитарно-эпидемиологических или экологических норм не кажутся столь
+				серьезными, то риски нарушения антимонопольного законодательства, к слову единственного не имеющего верхней планки величины
+				штрафа, – это уже повод задуматься.</p>
 		</div>
-		<ul class="list">
-			<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
-			<li>представительство в суде, включая обжалование решений ФАС; </li>
-			<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
-			<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
-			<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
-		</ul>
-		<div class="callus_button">
-			<img src="assets/app/dest/images/button_call.svg" alt="" />
-			<span>Связаться с нами</span>
-		</div>
+		[[$SinglePage_quote]]
+	</div>
+	<div class="text">
+		<p>В сфере юридического консалтинга, квалификация наших Экспертов позволяет организовать полное юридическое сопровождение
+			бизнеса, включая ведение договорной, претензионно-исковой, судебной работы. Однако, наиболее важным и актуальным для
+			Партнеров и Клиентов мы считаем:</p>
+	</div>
+	<ul class="list">
+		<li>защиту бизнеса от недружественного поглощения, недобросовестной конкуренции и антиконкурентных соглашений (включая картели);</li>
+		<li>представительство в суде, включая обжалование решений ФАС; </li>
+		<li>защиту по экономическим и антикоррупционным преступлениям владельцев бизнеса и руководителей организаций; </li>
+		<li>представительство интересов в ФАС, включая рассмотрение жалоб, связанных с участием в торгах/организацией торгов; </li>
+		<li>квалифицированную защиту по делам о картелях и других антиконкурентных соглашениях;</li>
+	</ul>
+	<div class="callus_button">
+		<img src="assets/app/dest/images/button_call.svg" alt="" />
+		<span>Связаться с нами</span>
+	</div>
+</div>',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
+      'SinglePage_quote' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 27,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'SinglePage_quote',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
+	</div>
+</div>',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '<div class="card quote">
+	<div class="header">Экспертное мнение</div>
+	<p>Наши Эксперты разработают и внедрят в Вашей организации проверенный опытом, научно-обоснованный комплаенс, с учетом актуальной
+		правоприменительной практики контрольно-надзорных и судебных органов. Опыт и знания наших Экспертов – в Вашем распоряжении.</p>
+	<div class="footer">
+		<div class="name">Константин Константинопольский</div>
+		<div class="degree">Доктор наук</div>
 	</div>
 </div>',
         ),
@@ -1528,7 +1911,75 @@
 			</li>
 			<li class="item">
 				<div class="date">23 Марта 2018</div>
-				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.) </div>
+				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.)
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="content news news_page col-xl-7 col-lg-10">
+		<h1>Новости и публикации</h1>
+		<ul class="news_list d-flex flex-wrap flex-row">
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах. Антимонопольный комплаенс в Российских реалиях </div>
+				<hr/>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Президент РФ подписал указ «Об основных оаправлениях госполитики по развитию конкуренции»</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях. Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях (Мигитко О.)</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+		</ul>
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link active">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">...</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">99</a>
 			</li>
 		</ul>
 	</div>
@@ -1561,9 +2012,163 @@
 			</li>
 			<li class="item">
 				<div class="date">23 Марта 2018</div>
-				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.) </div>
+				<div class="title">Антимонопольный комплаенс в США и Европе. По какому пути пойдет Россия? (Глубовкая Ю.)
+				</div>
 			</li>
 		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="content news news_page col-xl-7 col-lg-10">
+		<h1>Новости и публикации</h1>
+		<ul class="news_list d-flex flex-wrap flex-row">
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах. Антимонопольный комплаенс в Российских реалиях </div>
+				<hr/>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Президент РФ подписал указ «Об основных оаправлениях госполитики по развитию конкуренции»</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях. Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Новости</div>
+					<div class="date">11 Января 2018</div>
+				</div>
+				<div class="title">Антимонопольный комплаенс в Российских реалиях (Мигитко О.)</div>
+			</li>
+			<li class="item">
+				<div class="info">
+					<div class="category">Публикации</div>
+					<div class="date">4 Февраля 2018</div>
+				</div>
+				<div class="title">Потребность в эффективных комплаенс программах</div>
+			</li>
+		</ul>
+		<ul class="pagination">
+			<li class="page-item">
+				<a href="#" class="page-link active">1</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">2</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">3</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">...</a>
+			</li>
+			<li class="page-item">
+				<a href="#" class="page-link">99</a>
+			</li>
+		</ul>
+	</div>
+</div>',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
+      'Contacts' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 23,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'Contacts',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '<div class="container">
+	<div class="content d-flex flex-column col-xl-9">
+		<div class="cards contacts">
+			<div class="card">
+				<div class="map">
+					<img src="assets/app/dest/images/map.png" alt="" />
+				</div>
+				<div class="address d-flex">
+					<div>
+						<div>115035, г. Москва, Кадашевская набережная, дом 26 </div>
+						<div>Телефон: 8 (495) 664-39-74</div>
+						<div>Эл. почта:
+							<a href="mailto:info@icompliance.ru">info@icompliance.ru</a>
+						</div>
+					</div>
+					<div>
+						<div class="callus_button">
+							<img src="assets/app/dest/images/button_call.svg" alt="" />
+							<span>Связаться с нами</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '<div class="container">
+	<div class="content d-flex flex-column col-xl-9">
+		<div class="cards contacts">
+			<div class="card">
+				<div class="map">
+					<img src="assets/app/dest/images/map.png" alt="" />
+				</div>
+				<div class="address d-flex">
+					<div>
+						<div>115035, г. Москва, Кадашевская набережная, дом 26 </div>
+						<div>Телефон: 8 (495) 664-39-74</div>
+						<div>Эл. почта:
+							<a href="mailto:info@icompliance.ru">info@icompliance.ru</a>
+						</div>
+					</div>
+					<div>
+						<div class="callus_button">
+							<img src="assets/app/dest/images/button_call.svg" alt="" />
+							<span>Связаться с нами</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>',
         ),
@@ -1587,7 +2192,7 @@
         'fields' => 
         array (
           'id' => 18,
-          'source' => 1,
+          'source' => 0,
           'property_preprocess' => false,
           'name' => 'Footer',
           'description' => '',
@@ -1621,7 +2226,7 @@
           array (
           ),
           'static' => false,
-          'static_file' => '',
+          'static_file' => 'assets/app/dest/footer.html',
           'content' => '<footer class="container-fluid d-flex flex-row">
 	<div class="container d-flex justify-content-between flex-wrap">
 		<div class="logo">
@@ -1644,6 +2249,46 @@
 		</div>
 	</div>
 </footer>',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+        ),
+      ),
+      'Container_footer' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 25,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'Container_footer',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+',
         ),
         'policies' => 
         array (

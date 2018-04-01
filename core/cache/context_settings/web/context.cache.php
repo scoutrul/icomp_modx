@@ -5,12 +5,12 @@
   'aliasMap' => 
   array (
     'index/' => 1,
-    'index/ob-institute/' => 4,
+    'index/ob-institute.html' => 4,
     'index/komplaens/' => 5,
     'index/antimonopolnaya-praktika/' => 6,
     'index/zashhita-po-kartelyam/' => 7,
     'index/kontaktyi.html' => 8,
-    'index/ob-institute/partneryi.html' => 9,
+    'index/ob-institute/partners.html' => 9,
     'index/ob-institute/ekspertyi.html' => 10,
     'index/ob-institute/kejsyi.html' => 11,
     'index/ob-institute/novosti.html' => 12,
@@ -30,6 +30,7 @@
     'index/zashhita-po-kartelyam/minimizacziya-shtrafov-i-osvobozhdenie-ot-otvetstvennosti.html' => 26,
     'index/zashhita-po-kartelyam/pomoshh-v-vyiyavlenii-kartelej-konkurentov-i-postavshhikov.html' => 27,
     'index/zashhita-po-kartelyam/minimizacziya-personalnyix-riskov-rukovoditelej-i-akczionerov.html' => 28,
+    'index/ob-institute/ekspertyi/egorova.html' => 29,
   ),
   'resourceMap' => 
   array (
@@ -76,6 +77,10 @@
       1 => 26,
       2 => 27,
       3 => 28,
+    ),
+    10 => 
+    array (
+      0 => 29,
     ),
   ),
   'webLinkMap' => 

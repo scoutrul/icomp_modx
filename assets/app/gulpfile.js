@@ -18,7 +18,7 @@ var paths = {
 
 gulp.task('jade', function() {
 	return gulp
-		.src([ './src/jade/index.jade', '' ])
+		.src(['./src/jade/*.jade', '' ])
 		.pipe(
 			data(function(file) {
 				return JSON.parse(fs.readFileSync('./data.json'));
