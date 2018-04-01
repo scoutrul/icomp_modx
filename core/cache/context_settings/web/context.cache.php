@@ -4,20 +4,78 @@
   ),
   'aliasMap' => 
   array (
-    'index.html' => 1,
-    'contact/' => 2,
-    'contact/thankyou.html' => 3,
+    'index/' => 1,
+    'index/ob-institute/' => 4,
+    'index/komplaens/' => 5,
+    'index/antimonopolnaya-praktika/' => 6,
+    'index/zashhita-po-kartelyam/' => 7,
+    'index/kontaktyi.html' => 8,
+    'index/ob-institute/partneryi.html' => 9,
+    'index/ob-institute/ekspertyi.html' => 10,
+    'index/ob-institute/kejsyi.html' => 11,
+    'index/ob-institute/novosti.html' => 12,
+    'index/ob-institute/analitika.html' => 13,
+    'index/komplaens/antimonopolnyij-komplaens.html' => 14,
+    'index/komplaens/antikorrupczionnyij-komplaens.html' => 15,
+    'index/komplaens/bankovskij-komplaens.html' => 16,
+    'index/komplaens/retrospektivnyij-analiz-zakupochnoj-deyatelnosti.html' => 17,
+    'index/antimonopolnaya-praktika/predstavitelstvo-v-fas.html' => 19,
+    'index/antimonopolnaya-praktika/obzhalovanie-reshenij-fas.html' => 20,
+    'index/antimonopolnaya-praktika/konsultaczii-po-44-fz.html' => 21,
+    'index/antimonopolnaya-praktika/223-fz-i-275-fz.html' => 22,
+    'index/antimonopolnaya-praktika/konsultaczii-po-tarifnomu-regulirovaniyu.html' => 23,
+    'index/antimonopolnaya-praktika/konsultaczii-po-nedobrosovestnoj-konkurenczii-i-reklame.html' => 24,
+    'index/antimonopolnaya-praktika/soprovozhdenie-pri-provedenii-proverok-i-rassmotrenii-del-fas.html' => 25,
+    'index/zashhita-po-kartelyam/zashhita-po-delam-o-kartelyax-v-fas-i-v-sude.html' => 18,
+    'index/zashhita-po-kartelyam/minimizacziya-shtrafov-i-osvobozhdenie-ot-otvetstvennosti.html' => 26,
+    'index/zashhita-po-kartelyam/pomoshh-v-vyiyavlenii-kartelej-konkurentov-i-postavshhikov.html' => 27,
+    'index/zashhita-po-kartelyam/minimizacziya-personalnyix-riskov-rukovoditelej-i-akczionerov.html' => 28,
   ),
   'resourceMap' => 
   array (
     0 => 
     array (
       0 => 1,
-      1 => 2,
     ),
-    2 => 
+    1 => 
     array (
-      0 => 3,
+      0 => 4,
+      1 => 5,
+      2 => 6,
+      3 => 7,
+      4 => 8,
+    ),
+    4 => 
+    array (
+      0 => 9,
+      1 => 10,
+      2 => 11,
+      3 => 12,
+      4 => 13,
+    ),
+    5 => 
+    array (
+      0 => 14,
+      1 => 15,
+      2 => 16,
+      3 => 17,
+    ),
+    6 => 
+    array (
+      0 => 19,
+      1 => 20,
+      2 => 21,
+      3 => 22,
+      4 => 23,
+      5 => 24,
+      6 => 25,
+    ),
+    7 => 
+    array (
+      0 => 18,
+      1 => 26,
+      2 => 27,
+      3 => 28,
     ),
   ),
   'webLinkMap' => 

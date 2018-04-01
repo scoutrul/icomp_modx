@@ -35,12 +35,6 @@
     'path' => 'D:/OSPanel/domains/localhost/core/components/googlesitemap/',
     'assets_path' => 'D:/OSPanel/domains/localhost/assets/components/googlesitemap/',
   ),
-  'metax' => 
-  array (
-    'name' => 'metax',
-    'path' => 'D:/OSPanel/domains/localhost/core/components/metax/',
-    'assets_path' => '',
-  ),
   'migx' => 
   array (
     'name' => 'migx',
@@ -75,6 +69,12 @@
   array (
     'name' => 'translit',
     'path' => 'D:/OSPanel/domains/localhost/core/components/translit/',
+    'assets_path' => '',
+  ),
+  'wayfinder' => 
+  array (
+    'name' => 'wayfinder',
+    'path' => 'D:/OSPanel/domains/localhost/core/components/wayfinder/',
     'assets_path' => '',
   ),
 );
