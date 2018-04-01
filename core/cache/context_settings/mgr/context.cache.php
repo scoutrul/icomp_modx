@@ -369,7 +369,7 @@ if ($script) {
       'name' => 'AutoTemplate',
       'description' => 'Set the template of a new resource automatically to the one it\'s siblings have or, if it has no siblings, to the one it\'s parent has.',
       'editor_type' => '0',
-      'category' => '4',
+      'category' => '0',
       'cache_type' => '0',
       'plugincode' => '/**
  * AutoTemplate for MODx Revolution
