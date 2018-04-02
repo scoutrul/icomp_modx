@@ -31,6 +31,9 @@
     'index/zashhita-po-kartelyam/pomoshh-v-vyiyavlenii-kartelej-konkurentov-i-postavshhikov.html' => 27,
     'index/zashhita-po-kartelyam/minimizacziya-personalnyix-riskov-rukovoditelej-i-akczionerov.html' => 28,
     'index/ob-institute/ekspertyi/egorova.html' => 29,
+    'index/ob-institute/ekspertyi/filimonov.html' => 30,
+    'index/ob-institute/ekspertyi/chernyavskij.html' => 31,
+    'index/ob-institute/ekspertyi/bandurin.html' => 32,
   ),
   'resourceMap' => 
   array (
@@ -81,6 +84,9 @@
     10 => 
     array (
       0 => 29,
+      1 => 30,
+      2 => 31,
+      3 => 32,
     ),
   ),
   'webLinkMap' => 

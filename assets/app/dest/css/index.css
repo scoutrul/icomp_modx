@@ -3853,7 +3853,9 @@ header {
   width: 100%;
   min-height: 80px;
   height: 80px;
-  z-index: 22; }
+  z-index: 22;
+  border: none;
+  border-bottom: solid 1px #f2f2f2; }
   @media (max-width: 991.98px) {
     header .container {
       width: 100%; } }
@@ -3943,6 +3945,8 @@ header {
           text-decoration: none;
           color: #222;
           z-index: 5; }
+        header .header_items .header_items_menu .nav li.current_page_item > a {
+          color: #f03333; }
         header .header_items .header_items_menu .nav li:after {
           position: absolute;
           top: 5px;
@@ -4420,3 +4424,8 @@ footer {
   width: 100%;
   max-width: 100vw;
   padding: 0; }
+
+.flex1 {
+  flex: 1 0 auto;
+  align-items: center;
+  display: flex; }
