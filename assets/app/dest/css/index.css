@@ -4428,4 +4428,6 @@ footer {
 .flex1 {
   flex: 1 0 auto;
   align-items: center;
-  display: flex; }
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
