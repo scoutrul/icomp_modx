@@ -10,8 +10,9 @@
     'index/antimonopolnaya-praktika/' => 6,
     'index/zashhita-po-kartelyam/' => 7,
     'index/kontaktyi.html' => 8,
+    'index/novosti-i-publikaczii.html' => 33,
     'index/ob-institute/partners.html' => 9,
-    'index/ob-institute/ekspertyi.html' => 10,
+    'index/ob-institute/ekspertyi/' => 10,
     'index/ob-institute/kejsyi.html' => 11,
     'index/ob-institute/novosti.html' => 12,
     'index/ob-institute/analitika.html' => 13,
@@ -34,6 +35,7 @@
     'index/ob-institute/ekspertyi/filimonov.html' => 30,
     'index/ob-institute/ekspertyi/chernyavskij.html' => 31,
     'index/ob-institute/ekspertyi/bandurin.html' => 32,
+    'index/novosti-i-publikaczii/pervaya-novost.html' => 34,
   ),
   'resourceMap' => 
   array (
@@ -48,6 +50,7 @@
       2 => 6,
       3 => 7,
       4 => 8,
+      5 => 33,
     ),
     4 => 
     array (
@@ -87,6 +90,10 @@
       1 => 30,
       2 => 31,
       3 => 32,
+    ),
+    33 => 
+    array (
+      0 => 34,
     ),
   ),
   'webLinkMap' => 

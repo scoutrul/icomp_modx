@@ -9,7 +9,7 @@
   'ace.snippets' => '',
   'ace.soft_tabs' => '1',
   'ace.tab_size' => '4',
-  'ace.theme' => 'chrome',
+  'ace.theme' => 'twilight',
   'ace.word_wrap' => '',
   'allow_forward_across_contexts' => '',
   'allow_manager_login_forgot_password' => '1',
@@ -248,7 +248,7 @@
     <p>Once you log into the MODX Manager at [[+surl]], you can change your password.</p>
 
     <p>Regards,<br />Site Administrator</p>',
-  'site_name' => 'Сайт от Антона на Modx',
+  'site_name' => 'Комплеанс',
   'site_start' => '1',
   'site_status' => '1',
   'site_unavailable_message' => 'The site is currently unavailable',

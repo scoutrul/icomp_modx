@@ -1,5 +1,20 @@
 Changelog for pdoTools.
 
+2.11.0 pl
+==============
+- [pdoFetch] Added "setTotal" option to enable calculating all rows ("SQL_CALC_FOUND_ROWS"), which will also result in the "totalVar" placeholder is being set.
+- [pdoFetch] Option "setTotal" disabled by default.
+- [pdoPage] Forces "setTotal" to provide pagination.
+
+2.10.6 pl
+==============
+- Improved German lexicons.
+
+2.10.5 pl
+==============
+- [pdoTools] Ability to return array from "prepareSnippet" for more performance.
+- [FenomX] Fixed method "getStore".
+
 2.10.4 pl
 ==============
 - [Fenom] Do not output raw tags if there was a compile errors.

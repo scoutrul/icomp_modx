@@ -136,3 +136,24 @@ Array
 [2018-04-03 01:52:27] (ERROR in resource 10 @ D:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 1370) Bad link tag `[[~Expert_name]]` encountered
 [2018-04-03 01:53:55] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
 [2018-04-03 01:56:40] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-04-04 11:41:57] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-04-04 13:04:29] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 13:06:35] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 13:06:41] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/resource
+[2018-04-04 13:22:11] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 13:25:24] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-04-04 13:31:03] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modx.class.php : 990) `[[+id]]` is not a valid integer and may not be passed to makeUrl()
+[2018-04-04 13:31:03] (ERROR in resource 1 @ D:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 1370) Bad link tag `[[~[[+id]]]]` encountered
+[2018-04-04 13:44:05] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-04-04 13:48:20] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 538) Could not find snippet with name 33.
+[2018-04-04 13:48:20] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 538) Could not find snippet with name 33.
+[2018-04-04 13:54:13] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 14:06:01] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-04 14:06:01] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-04 14:06:24] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-04 14:06:24] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-04 14:06:24] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-04 14:28:55] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 14:29:39] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-04 15:14:47] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-04-04 15:22:00] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 394) Error caching action map mgr/actions

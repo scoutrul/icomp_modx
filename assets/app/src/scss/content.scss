@@ -6,8 +6,12 @@
 	letter-spacing: normal;
 	text-align: left;
 	color: #222222;
-	@media($S) {
-		font-size: 14px
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	@media ($S) {
+		font-size: 14px;
 	}
 	.image {
 		margin: 20px 0;
@@ -32,7 +36,7 @@
 		font-size: 36px;
 		font-weight: 500;
 		color: #222222;
-}
+	}
 	.slogan {
 		line-height: 140%;
 		margin: 0px 0 45px;

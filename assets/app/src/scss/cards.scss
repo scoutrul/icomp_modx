@@ -2,36 +2,34 @@
 .cards {
 	width: 100%;
 	margin: 20px auto;
-	@media ($M) {
+	justify-content: center;
+	@media ($L) {
 		flex-wrap: wrap;
-		.card {
-			margin: 20px auto !important;
-		}
+	}
+	@media ($XL) {
+		margin-left: -20px;
 	}
 	.card {
 		display: flex;
-		flex: 1 1 auto;
-		max-width: 292.2px;
+		flex: 1 1 25%;
+		max-width: 260px;
+		width: 100%;
 		line-height: 129%;
 		padding: 20px;
-		margin: 0 20px 0 0;
+		margin: 10px;
 		font-size: 14px;
 		color: #9f9f9f;
 		background-color: #ffffff;
 		box-shadow: 0 0 20px 5px rgba(236, 236, 236, 0.5);
 		border: none;
 		&:last-child {
-			margin-right: 0;
+			// margin-right: 0;
 		}
 		.photo {
 			margin: -20px -20px 0 -20px;
 			overflow: hidden;
-			@media ($XS) {
-				img {
-					width: 100%;
-				}
-			}
 			img {
+				width: 100%;
 				max-width: 100%;
 			}
 		}

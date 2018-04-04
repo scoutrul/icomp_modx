@@ -1166,10 +1166,12 @@ class pdoTools
                 'pdoFetch' => $this,
                 'row' => $row,
             )));
-
-            $tmp = ($tmp[0] == '[' || $tmp[0] == '{')
-                ? json_decode($tmp, true)
-                : unserialize($tmp);
+            
+            if (!is_array($tmp)){
+                $tmp = ($tmp[0] == '[' || $tmp[0] == '{')
+                    ? json_decode($tmp, true)
+                    : unserialize($tmp);
+            }
 
             if (!is_array($tmp)) {
                 $this->addTime('Preparation snippet must return an array, instead of "' . gettype($tmp) . '"');
@@ -1209,7 +1211,9 @@ class pdoTools
         } else {
             return $rows;
         }
-        $total = $this->modx->getPlaceholder($this->config['totalVar']);
+        $total = !empty($this->config['totalVar'])
+            ? $this->modx->getPlaceholder($this->config['totalVar'])
+            : 0;
 
         foreach ($rows as $key => $row) {
             /** @var modAccessibleObject $object */
@@ -1223,7 +1227,9 @@ class pdoTools
         }
 
         $this->addTime('Checked for permissions "' . implode(',', array_keys($permissions)) . '"');
-        $this->modx->setPlaceholder($this->config['totalVar'], $total);
+        if (!empty($this->config['totalVar']) && !empty($this->config['setTotal'])) {
+            $this->modx->setPlaceholder($this->config['totalVar'], $total);
+        }
 
         return $rows;
     }

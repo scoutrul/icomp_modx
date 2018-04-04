@@ -22,7 +22,10 @@ header {
 		.header_items_logo {
 			flex: 0;
 			order: -3;
-			padding-right: 0;
+			padding: 0;
+			@media ($M) {
+				padding-left: 20px;
+			}
 		}
 		.header_items_local,
 		.header_items_search {
