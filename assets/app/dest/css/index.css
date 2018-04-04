@@ -4119,6 +4119,10 @@ header {
   justify-content: space-between;
   padding: 0;
   padding-top: 20px; }
+  .news .underline {
+    border: solid 0 rgba(242, 242, 242, 0.49);
+    border-bottom-width: 2px;
+    padding-bottom: 10px; }
   .news hr {
     border: solid 0 rgba(242, 242, 242, 0.49);
     border-top-width: 2px; }
@@ -4307,12 +4311,15 @@ header {
       height: 70px;
       margin: 0 20px auto 0;
       border-radius: 50%;
-      overflow: hidden;
-      padding-bottom: 20px; }
+      overflow: hidden; }
       .cards.experts .card .photo img,
       .cards.experts .card .image img, .cards.uslugi .card .photo img,
       .cards.uslugi .card .image img {
         height: 100%; }
+      .cards.experts .card .photo.image,
+      .cards.experts .card .image.image, .cards.uslugi .card .photo.image,
+      .cards.uslugi .card .image.image {
+        padding-bottom: 20px; }
     .cards.experts .card .title, .cards.uslugi .card .title {
       line-height: 103%;
       padding: 5px 0;

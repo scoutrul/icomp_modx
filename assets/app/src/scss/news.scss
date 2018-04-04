@@ -4,6 +4,11 @@
 	padding: 0;
 	padding-top: 20px;
 
+	.underline {
+		border: solid 0 rgba(242, 242, 242, 0.49);
+		border-bottom-width: 2px;
+		padding-bottom: 10px;
+	}
 	hr {
 		border: solid 0 rgba(242, 242, 242, 0.49);
 		border-top-width: 2px;
@@ -22,7 +27,7 @@
 	.news_list {
 		padding: 0;
 		list-style: none;
-		@media($L){
+		@media ($L) {
 			flex-wrap: wrap;
 		}
 		.item {
@@ -47,7 +52,7 @@
 				font-size: 14px;
 				color: #222222;
 				&:hover {
-					color:#f03333;
+					color: #f03333;
 					text-decoration: none;
 				}
 			}

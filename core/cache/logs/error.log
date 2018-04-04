@@ -436,3 +436,5 @@ Array
 [2018-04-05 00:35:48] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
 [2018-04-05 00:36:17] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
 [2018-04-05 00:36:27] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-05 00:47:07] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
+[2018-04-05 00:48:41] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default
