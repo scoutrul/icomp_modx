@@ -12,6 +12,7 @@
     'index/kontaktyi.html' => 8,
     'index/novosti-i-publikaczii/' => 33,
     'index/uslugi/' => 35,
+    'index/slajder/' => 44,
     'index/ob-institute/partners.html' => 9,
     'index/ob-institute/ekspertyi/' => 10,
     'index/ob-institute/kejsyi.html' => 11,
@@ -45,6 +46,11 @@
     'index/uslugi/antimonopolnaya-praktika.html' => 37,
     'index/uslugi/zashhita-po-kartelyam.html' => 38,
     'index/uslugi/korporativnyij-konsalting.html' => 39,
+    'index/slajder/nashi-uslugi.html' => 45,
+    'index/slajder/vtoroj.html' => 46,
+    'index/slajder/tretij.html' => 47,
+    'index/slajder/chetvertyij.html' => 48,
+    'index/slajder/pyatyij.html' => 49,
   ),
   'resourceMap' => 
   array (
@@ -61,6 +67,7 @@
       4 => 8,
       5 => 33,
       6 => 35,
+      7 => 44,
     ),
     4 => 
     array (
@@ -115,6 +122,14 @@
       1 => 37,
       2 => 38,
       3 => 39,
+    ),
+    44 => 
+    array (
+      0 => 45,
+      1 => 46,
+      2 => 47,
+      3 => 48,
+      4 => 49,
     ),
   ),
   'webLinkMap' => 

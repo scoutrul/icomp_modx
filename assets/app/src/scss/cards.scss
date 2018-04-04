@@ -1,19 +1,20 @@
 @import 'vars.scss';
 .cards {
+	justify-content: center;
 	width: 100%;
 	margin: 20px auto;
-	justify-content: center;
-	@media ($L) {
-		flex-wrap: wrap;
-	}
+
+	flex-wrap: wrap;
+
 	@media ($XL) {
 		margin-left: -10px;
+		flex-wrap: nowrap;
 	}
 	.card {
 		display: flex;
-		flex: 1 1 25%;
-		max-width: 260px;
+		flex: 0 0 auto;
 		width: 100%;
+		max-width: 310px;
 		line-height: 129%;
 		padding: 20px;
 		margin: 10px;
@@ -22,6 +23,9 @@
 		background-color: #ffffff;
 		box-shadow: 0 0 20px 5px rgba(236, 236, 236, 0.5);
 		border: none;
+		@media ($XL) {
+			flex: 1 1 25%;
+		}
 		&:last-child {
 			// margin-right: 0;
 		}
@@ -52,6 +56,7 @@
 			font-weight: 500;
 			color: #222222;
 			text-align: center;
+			text-decoration: none;
 		}
 		.description {
 			margin: 0 auto auto auto;
@@ -64,6 +69,7 @@
 			margin: 30px auto 10px auto;
 			border: solid 1px #f2f2f2;
 			text-align: center;
+			color: #9f9f9f;
 			&:hover {
 				color: #fff;
 				background: #f03333;
@@ -83,6 +89,7 @@
 					margin: 0 20px auto 0;
 					border-radius: 50%;
 					overflow: hidden;
+					padding-bottom: 20px;
 					img {
 						height: 100%;
 					}
