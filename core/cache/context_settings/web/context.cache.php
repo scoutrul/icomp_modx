@@ -10,7 +10,8 @@
     'index/antimonopolnaya-praktika/' => 6,
     'index/zashhita-po-kartelyam/' => 7,
     'index/kontaktyi.html' => 8,
-    'index/novosti-i-publikaczii.html' => 33,
+    'index/novosti-i-publikaczii/' => 33,
+    'index/uslugi/' => 35,
     'index/ob-institute/partners.html' => 9,
     'index/ob-institute/ekspertyi/' => 10,
     'index/ob-institute/kejsyi.html' => 11,
@@ -36,6 +37,14 @@
     'index/ob-institute/ekspertyi/chernyavskij.html' => 31,
     'index/ob-institute/ekspertyi/bandurin.html' => 32,
     'index/novosti-i-publikaczii/pervaya-novost.html' => 34,
+    'index/novosti-i-publikaczii/antimonopolnyij-komplaens-v-rossijskix-realiyax-(migitko-o.).html' => 40,
+    'index/novosti-i-publikaczii/potrebnost-v-effektivnyix-komplaens-programmax.html' => 41,
+    'index/novosti-i-publikaczii/prezident-rf-podpisal-ukaz-«ob-osnovnyix-oapravleniyax-gospolitiki-po-razvitiyu-konkurenczii».html' => 42,
+    'index/novosti-i-publikaczii/antimonopolnyij-komplaens-v-ssha-i-evrope.-po-kakomu-puti-pojdet-rossiya-(glubovkaya-yu.).html' => 43,
+    'index/uslugi/kompleans.html' => 36,
+    'index/uslugi/antimonopolnaya-praktika.html' => 37,
+    'index/uslugi/zashhita-po-kartelyam.html' => 38,
+    'index/uslugi/korporativnyij-konsalting.html' => 39,
   ),
   'resourceMap' => 
   array (
@@ -51,6 +60,7 @@
       3 => 7,
       4 => 8,
       5 => 33,
+      6 => 35,
     ),
     4 => 
     array (
@@ -94,6 +104,17 @@
     33 => 
     array (
       0 => 34,
+      1 => 40,
+      2 => 41,
+      3 => 42,
+      4 => 43,
+    ),
+    35 => 
+    array (
+      0 => 36,
+      1 => 37,
+      2 => 38,
+      3 => 39,
     ),
   ),
   'webLinkMap' => 
