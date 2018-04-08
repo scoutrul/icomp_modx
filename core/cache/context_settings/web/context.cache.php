@@ -43,6 +43,7 @@
     'index/novosti-i-publikaczii/prezident-rf-podpisal-ukaz-«ob-osnovnyix-oapravleniyax-gospolitiki-po-razvitiyu-konkurenczii».html' => 42,
     'index/novosti-i-publikaczii/antimonopolnyij-komplaens-v-ssha-i-evrope.-po-kakomu-puti-pojdet-rossiya-(glubovkaya-yu.).html' => 43,
     'index/novosti-i-publikaczii/krajnyaya-novost.html' => 50,
+    'index/novosti-i-publikaczii/k-kakim-posledstviyam-mogut-privesti-novyie-sankczii-ssha-protiv-rossii.html' => 51,
     'index/uslugi/kompleans.html' => 36,
     'index/uslugi/antimonopolnaya-praktika.html' => 37,
     'index/uslugi/zashhita-po-kartelyam.html' => 38,
@@ -117,6 +118,7 @@
       3 => 42,
       4 => 43,
       5 => 50,
+      6 => 51,
     ),
     35 => 
     array (

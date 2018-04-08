@@ -4064,30 +4064,33 @@ header {
               line-height: 131%; } }
 
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 170%;
   margin: 35px auto;
   font-size: 16px;
   letter-spacing: normal;
   text-align: left;
   color: #222222;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
+  flex-flow: row wrap; }
   @media (max-width: 767.98px) {
     .content {
       font-size: 14px; } }
   .content .image {
+    width: 100%;
     margin: 20px 0; }
+    .content .image img {
+      max-width: 100%; }
   .content .image_expert {
     display: flex;
-    width: fit-content;
-    border-radius: 50%;
-    overflow: hidden;
-    max-height: 160px;
-    max-width: 160px;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: fit-content;
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 50%;
+    overflow: hidden; }
     .content .image_expert img {
       max-width: 110%; }
   .content h1 {
@@ -4104,15 +4107,18 @@ header {
     color: #9f9f9f; }
   .content .text {
     line-height: 26px; }
+    .content .text img {
+      max-width: 100%;
+      height: auto; }
   .content .callus {
     width: 212px; }
   .content .list {
     list-style: none; }
     .content .list li:before {
-      content: "•";
       position: absolute;
-      color: red;
       left: 40px;
+      content: "•";
+      color: red;
       font-size: 200%; }
 
 .news {
@@ -4440,7 +4446,6 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #9f9f9f;
   box-sizing: content-box; }
 
 .container-fluid {
@@ -4450,7 +4455,86 @@ footer {
   box-sizing: border-box; }
 
 .flex1 {
+  display: flex;
   flex: 1 0 auto;
   align-items: center;
-  display: flex;
   flex-flow: column wrap; }
+
+.modal-dialog {
+  position: fixed;
+  display: flex;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+  line-height: 163%;
+  margin: auto;
+  color: #222222;
+  overflow: auto; }
+  .modal-dialog .modal-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 0px;
+    box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.619608);
+    margin: auto; }
+    .modal-dialog .modal-content .modal-header {
+      padding: 0 20px;
+      border: none; }
+      .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #f03333; }
+    .modal-dialog .modal-content .modal-footer {
+      padding: 0 20px;
+      border: none; }
+    .modal-dialog .modal-content .modal-body {
+      padding: 0 20px; }
+      .modal-dialog .modal-content .modal-body .form-group {
+        display: flex;
+        margin: 20px 0;
+        flex-flow: column wrap;
+        font-size: 14px;
+        color: #9f9f9f; }
+        .modal-dialog .modal-content .modal-body .form-group label {
+          display: block;
+          font-size: 16px;
+          padding-bottom: 2px;
+          padding-top: 5px; }
+        .modal-dialog .modal-content .modal-body .form-group input {
+          display: flex;
+          flex: 1;
+          line-height: 129%;
+          padding: 20px 10px;
+          border: solid 1px #f2f2f2; }
+        .modal-dialog .modal-content .modal-body .form-group select {
+          line-height: 129%;
+          padding: 10px;
+          background-color: #f2f2f2;
+          border: 0; }
+        .modal-dialog .modal-content .modal-body .form-group textarea {
+          min-height: 150px;
+          line-height: 129%;
+          padding: 10px;
+          border: solid 1px #f2f2f2;
+          resize: none; }
+    .modal-dialog .modal-content button.close {
+      border: 0;
+      background: none;
+      color: #f03333;
+      font-size: 40px;
+      transform: translateY(-18px);
+      cursor: pointer; }
+      .modal-dialog .modal-content button.close :hover {
+        color: #222; }
+    .modal-dialog .modal-content .send_button {
+      width: 200px;
+      height: 50px;
+      background-color: #f03333;
+      border: 0;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer; }
+      @media (max-width: 767.98px) {
+        .modal-dialog .modal-content .send_button {
+          margin: 20px auto; } }
