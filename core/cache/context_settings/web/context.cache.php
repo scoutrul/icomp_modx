@@ -4,6 +4,7 @@
   ),
   'aliasMap' => 
   array (
+    'quotes/' => 54,
     'index/' => 1,
     'index/ob-institute.html' => 4,
     'index/komplaens/' => 5,
@@ -44,6 +45,8 @@
     'index/novosti-i-publikaczii/antimonopolnyij-komplaens-v-ssha-i-evrope.-po-kakomu-puti-pojdet-rossiya-(glubovkaya-yu.).html' => 43,
     'index/novosti-i-publikaczii/krajnyaya-novost.html' => 50,
     'index/novosti-i-publikaczii/k-kakim-posledstviyam-mogut-privesti-novyie-sankczii-ssha-protiv-rossii.html' => 51,
+    'index/novosti-i-publikaczii/tramp-posovetoval-rossii-prigotovitsya-k-raketnyim-udaram-po-sirii‍.html' => 52,
+    'index/novosti-i-publikaczii/minfin-ne-nameren-peresmatrivat-mesyachnyij-obem-pokupok-valyutyi.html' => 53,
     'index/uslugi/kompleans.html' => 36,
     'index/uslugi/antimonopolnaya-praktika.html' => 37,
     'index/uslugi/zashhita-po-kartelyam.html' => 38,
@@ -53,12 +56,14 @@
     'index/slajder/tretij.html' => 47,
     'index/slajder/chetvertyij.html' => 48,
     'index/slajder/pyatyij.html' => 49,
+    'quotes/ekspertnoe-mnenie.html' => 55,
   ),
   'resourceMap' => 
   array (
     0 => 
     array (
-      0 => 1,
+      0 => 54,
+      1 => 1,
     ),
     1 => 
     array (
@@ -119,6 +124,8 @@
       4 => 43,
       5 => 50,
       6 => 51,
+      7 => 52,
+      8 => 53,
     ),
     35 => 
     array (
@@ -134,6 +141,10 @@
       2 => 47,
       3 => 48,
       4 => 49,
+    ),
+    54 => 
+    array (
+      0 => 55,
     ),
   ),
   'webLinkMap' => 

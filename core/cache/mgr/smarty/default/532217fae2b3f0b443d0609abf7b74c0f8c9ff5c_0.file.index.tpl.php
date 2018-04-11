@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2018-01-26 02:39:35
+<?php /* Smarty version 3.1.27, created on 2018-04-09 11:19:41
          compiled from "D:\OSPanel\domains\localhost\manager\templates\default\workspaces\index.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:198145a6a6ab76f93d2_74760485%%*/
+/*%%SmartyHeaderCode:307275acb221d1ab7e4_42092691%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,20 +13,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '198145a6a6ab76f93d2_74760485',
+  'nocache_hash' => '307275acb221d1ab7e4_42092691',
   'variables' => 
   array (
     'error' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5a6a6ab7722648_53974354',
+  'unifunc' => 'content_5acb221d25cfa5_39061615',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5a6a6ab7722648_53974354')) {
-function content_5a6a6ab7722648_53974354 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5acb221d25cfa5_39061615')) {
+function content_5acb221d25cfa5_39061615 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '198145a6a6ab76f93d2_74760485';
+$_smarty_tpl->properties['nocache_hash'] = '307275acb221d1ab7e4_42092691';
 echo (($tmp = @$_smarty_tpl->tpl_vars['error']->value)===null||$tmp==='' ? '' : $tmp);?>
 
 <div id="modx-panel-workspace-div"></div>

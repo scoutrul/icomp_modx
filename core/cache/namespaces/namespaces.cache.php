@@ -71,6 +71,12 @@
     'path' => 'D:/OSPanel/domains/localhost/core/components/translit/',
     'assets_path' => '',
   ),
+  'vapor' => 
+  array (
+    'name' => 'vapor',
+    'path' => 'D:/OSPanel/domains/localhost/core/components/vapor/',
+    'assets_path' => '',
+  ),
   'wayfinder' => 
   array (
     'name' => 'wayfinder',
