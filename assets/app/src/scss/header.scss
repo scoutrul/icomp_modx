@@ -6,6 +6,12 @@ header {
 	z-index: 22;
 	border: none;
 	border-bottom: solid 1px #f2f2f2;
+	@media ($M) {
+		position: fixed !important;
+		top: 0;
+		right: 0;
+		background-color: white;
+	}
 	.container {
 		@media ($M) {
 			width: 100%;
@@ -24,7 +30,7 @@ header {
 			padding: 0;
 			order: -3;
 			@media ($M) {
-				padding-left: 20px;
+				// padding-left: 20px;
 			}
 		}
 		.header_items_local,
@@ -37,22 +43,17 @@ header {
 		.header_items_menu {
 			order: -2;
 			@media ($M) {
-				order: -5;
+				flex: 0;
 			}
 			.burger {
 				display: none;
 				@media ($M) {
 					display: block;
 				}
-				&:hover {
-					// mobile menu
-					+ .nav {
-						display: flex;
-					}
-				}
 			}
 			.nav {
 				display: flex;
+				justify-content: flex-end;
 				line-height: 18px;
 				margin: 0;
 				padding-left: 50px;
@@ -60,13 +61,13 @@ header {
 				font-weight: 500;
 				list-style: none;
 				@media ($M) {
+					// MOBILE MENU
 					position: absolute;
 					top: 28px;
-					left: 0px;
+					right: 0px;
 					display: none;
-					// mobile menu
 					width: 100vw;
-					max-width: 600px;
+					max-width: 768px;
 					padding: 30px 0 0 0;
 					flex-flow: column wrap;
 					z-index: 10;
@@ -74,17 +75,24 @@ header {
 					box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.11);
 					@media ($S) {
 						position: fixed;
+						top: 80px;
+						left: 0;
+						justify-content: flex-start;
 						min-height: 100vh;
+						padding: 0;
+						box-shadow: none;
 					}
 
 					li {
 						margin: 0 !important;
+						&.active {
+							&:after {
+								transform: rotate(180deg);
+							}
+						}
 						&:after {
 							top: 25px !important;
 							right: 25px !important;
-						}
-						&:hover:after {
-							transform: rotate(180deg);
 						}
 						a {
 							display: flex;
@@ -105,21 +113,44 @@ header {
 						display: flex;
 					}
 				}
+				&.active {
+					display: flex;
+					justify-content: flex-start;
+				}
 				&:hover {
 					display: flex;
 				}
 				li {
 					position: relative;
-					margin-right: 50px;
+					min-width: 100px;
+					margin-right: auto;
 					z-index: 5;
-					&:last-child:after {
-						//last item = contacts
-						display: none;
+					@media($L) {
+						margin-right: 40px;
+					}
+					@media ($S) {
+						border-bottom: 1px solid #fafafa;
+						&:last-child {
+							border: none;
+						}
+						&.current_page_item {
+							> a {
+								color: #e5e5e5;
+							}
+						}
+					}
+					&:last-child {
+						margin-right: 0;
+						&:after {
+							//last item = contacts
+							display: none;
+						}
 					}
 					a {
 						text-decoration: none;
 						color: #222;
 						z-index: 5;
+						word-break: break-word;
 					}
 					&.current_page_item {
 						> a {
@@ -129,7 +160,7 @@ header {
 					&:after {
 						position: absolute;
 						top: 5px;
-						right: -25px;
+						left: -20px;
 						width: 0;
 						height: 0;
 						content: '';
@@ -137,15 +168,13 @@ header {
 						border-right: 6px solid transparent;
 						border-top: 9px solid #e5e5e5;
 					}
-					&:hover {
+					&.active {
 						&:after {
 							border-left: 6px solid transparent;
 							border-right: 6px solid transparent;
 							border-top: 9px solid #f03333;
 						}
 						.sub_nav {
-							visibility: visible;
-							opacity: 1;
 							display: flex;
 						}
 					}
@@ -154,20 +183,17 @@ header {
 			.sub_nav {
 				position: absolute;
 				top: 13px;
-				right: -40px;
+				left: -30px;
+				display: none;
 				min-width: 266px;
 				height: fit-content;
 				padding: 36px 10px 10px;
-				visibility: hidden;
 				z-index: -1;
 				flex-flow: column wrap;
 				font-weight: 400;
 				list-style: none;
-				visibility: hidden;
-				opacity: 0;
 				transition: .2s ease;
-				@media($M){
-					display: none;
+				@media ($M) {
 				}
 				li {
 					margin: 0;

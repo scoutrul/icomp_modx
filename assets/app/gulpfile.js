@@ -8,17 +8,13 @@ var fs = require('fs');
 
 var paths = {
 	sass: [ './src/scss/*.scss' ],
-	js: [
-		'./node_modules/bootstrap/dist/js/bootstrap.min.js',
-		'./node_modules/jquery/dist/jquery.min.js',
-		'./node_modules/tether/dist/js/tether.min.js'
-	],
+	js: [ './src/js/*.js' ],
 	jade: [ './src/**/*.jade' ]
 };
 
 gulp.task('jade', function() {
 	return gulp
-		.src(['./src/jade/*.jade', '' ])
+		.src([ './src/jade/*.jade', '' ])
 		.pipe(
 			data(function(file) {
 				return JSON.parse(fs.readFileSync('./data.json'));
@@ -45,7 +41,10 @@ gulp.task('js', function() {
 
 gulp.task('serve', [ 'sass', 'jade', 'js' ], function() {
 	browserSync.init({
-		proxy: 'localhost'
+		// proxy: 'localhost',
+		server: {
+			baseDir: './dest'
+		}
 	});
 
 	gulp.watch(paths.sass, [ 'sass' ]).on('change', browserSync.reload);

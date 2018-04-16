@@ -20,6 +20,11 @@
 			max-width: 100%;
 		}
 	}
+	&.expert {
+		.image, h1 {
+			margin: 20px auto 2px 0;
+		}
+	}
 	.image_expert {
 		display: flex;
 		justify-content: center;

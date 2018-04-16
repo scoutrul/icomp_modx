@@ -29,6 +29,12 @@
     'path' => 'D:/OSPanel/domains/localhost/manager/',
     'assets_path' => 'D:/OSPanel/domains/localhost/manager/assets/',
   ),
+  'databackup' => 
+  array (
+    'name' => 'databackup',
+    'path' => 'D:/OSPanel/domains/localhost/core/components/databackup/',
+    'assets_path' => '',
+  ),
   'googlesitemap' => 
   array (
     'name' => 'googlesitemap',

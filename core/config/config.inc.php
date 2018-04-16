@@ -7,9 +7,9 @@ $database_server = 'localhost';
 $database_user = 'root';
 $database_password = '';
 $database_connection_charset = 'utf8';
-$dbase = 'modx';
+$dbase = 'icompnof_2018';
 $table_prefix = 'modx_';
-$database_dsn = 'mysql:host=localhost;dbname=modx;charset=utf8';
+$database_dsn = 'mysql:host=localhost;dbname=icompnof_2018;charset=utf8';
 $config_options = array (
 );
 $driver_options = array (
