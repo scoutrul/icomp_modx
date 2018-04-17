@@ -1,6 +1,10 @@
 //- includes/menu.jade
 .burger 
-        img(src="./images/burger_menu.svg", alt="")
 ul.nav#menu
         each link in menu
-                li= link.title
+                li.head
+                        a(href='#')= link.title
+                        ul.sub_nav
+                                each sub in link
+                                        li
+                                                a= sub

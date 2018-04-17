@@ -13,6 +13,9 @@
 	@media ($S) {
 		font-size: 14px;
 	}
+	@media($M) {
+		padding-top: 80px;
+	}
 	.image {
 		width: 100%;
 		margin: 20px 0;
@@ -47,11 +50,11 @@
 		color: #222222;
 	}
 	.slogan {
+		width: 100%;
 		line-height: 140%;
 		margin: 0px 0 45px;
 		font-size: 18px;
 		color: #9f9f9f;
-		width: 100%;
 	}
 	.text {
 		line-height: 26px;
@@ -72,6 +75,15 @@
 			content: "•";
 			color: red;
 			font-size: 200%;
+		}
+	}
+	&.partners {
+		.item {
+			.title { 
+				display: flex;
+				align-items: center; 
+				padding-left: 20px;
+			}
 		}
 	}
 }

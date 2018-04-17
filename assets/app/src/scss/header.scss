@@ -47,8 +47,17 @@ header {
 			}
 			.burger {
 				display: none;
+				width: 21px;
+				height: 19px;
+				background-image: url(../images/burger_menu.svg);
+				cursor: pointer;
 				@media ($M) {
 					display: block;
+					&.active {
+						width: 20px;
+						height: 20px;
+						background-image: url(../images/close_icon.svg);
+					}
 				}
 			}
 			.nav {
@@ -83,7 +92,7 @@ header {
 						box-shadow: none;
 					}
 
-					li {
+					li.head {
 						margin: 0 !important;
 						&.active {
 							&:after {
@@ -92,7 +101,7 @@ header {
 						}
 						&:after {
 							top: 25px !important;
-							right: 25px !important;
+							right: 25px;
 						}
 						a {
 							display: flex;
@@ -120,14 +129,11 @@ header {
 				&:hover {
 					display: flex;
 				}
-				li {
+				li.head {
 					position: relative;
-					min-width: 100px;
-					margin-right: auto;
+					min-width: 70px;
+					margin-right: 40px;
 					z-index: 5;
-					@media($L) {
-						margin-right: 40px;
-					}
 					@media ($S) {
 						border-bottom: 1px solid #fafafa;
 						&:last-child {
@@ -141,6 +147,7 @@ header {
 					}
 					&:last-child {
 						margin-right: 0;
+						margin-left: -15px;
 						&:after {
 							//last item = contacts
 							display: none;
@@ -150,7 +157,6 @@ header {
 						text-decoration: none;
 						color: #222;
 						z-index: 5;
-						word-break: break-word;
 					}
 					&.current_page_item {
 						> a {
@@ -160,13 +166,15 @@ header {
 					&:after {
 						position: absolute;
 						top: 5px;
-						left: -20px;
 						width: 0;
 						height: 0;
 						content: '';
 						border-left: 6px solid transparent;
 						border-right: 6px solid transparent;
 						border-top: 9px solid #e5e5e5;
+						@media($XL){
+							left: -20px;
+						}
 					}
 					&.active {
 						&:after {
@@ -196,6 +204,9 @@ header {
 				@media ($M) {
 				}
 				li {
+					&.current_page_item {
+						margin-left: 0 !important;
+					}
 					margin: 0;
 
 					&:after {
