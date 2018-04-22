@@ -2,14 +2,19 @@
 .pagination {
 	display: flex;
 	list-style: none;
+	padding: 0;
+    margin: 40px auto;
 	.page-item {
-		a {
+		.page-link {
 			line-height: 86%;
 			padding: 0 20px;
 			font-size: 14px;
 			color: #9f9f9f;
 			&:hover,&.active {
 				color: #f03333;
+			}
+			&.active {
+				text-decoration: underline;
 			}
 		}
 	}

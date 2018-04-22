@@ -3,7 +3,6 @@ $(function() {
 	var mobileScreen = 990;
 	var appScreen = $('#app').width();
 
-	console.log(appScreen);
 
 	var menu = $('#menu');
 	var burger = $('.burger');
@@ -19,7 +18,6 @@ $(function() {
 	function toggleUIbyScreenWidth() {
 		$(window).resize(function() {
 			appScreen = $('#app').width();
-			console.log(appScreen);
 		});
 
 		if (appScreen >= mobileScreen) {
@@ -49,4 +47,34 @@ $(function() {
 		}
 	}
 	toggleUIbyScreenWidth();
+
+	$('#send_form').on('click', function() {
+		console.log('sending');
+		var name = $('#your_name').val();
+		var tel = $('#your_tel').val();
+		var email = $('#your_email').val();
+		var theme = $('#your_theme').val();
+		var msg = $('#your_message').val();
+
+		var dataString = 'name=' + name + '&tel=' + tel + '&email=' + email + '&theme=' + theme + '&msg=' + msg;
+		console.log(dataString);
+
+		$.ajax({
+			type: 'POST',
+			url: '/feedback.html', 
+			data: dataString,
+			dataType: 'html',
+			success: function() {
+				$('#send_form').html("<div id='message'></div>");
+				$('#message')
+					.html('<h2>Вопрос отправлен!</h2>')
+					.append('<p>Скоро мы с вами свяжемся.</p>')
+					.hide()
+					.fadeIn(1500, function() {
+						$('#message').append('<i class="icon-ok"></i>');
+					});
+			}
+		});
+		return false;
+	});
 });

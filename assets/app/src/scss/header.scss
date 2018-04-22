@@ -37,13 +37,16 @@ header {
 		.header_items_search {
 			flex: 0;
 			@media ($M) {
-				flex: 1 auto;
+				// flex: 1 auto;
 			}
 		}
 		.header_items_menu {
+			display: flex;
+			justify-content: flex-end;
 			order: -2;
 			@media ($M) {
 				flex: 0;
+				order: 2;
 			}
 			.burger {
 				display: none;
@@ -72,7 +75,7 @@ header {
 				@media ($M) {
 					// MOBILE MENU
 					position: absolute;
-					top: 28px;
+					top: 48px;
 					right: 0px;
 					display: none;
 					width: 100vw;
@@ -172,7 +175,7 @@ header {
 						border-left: 6px solid transparent;
 						border-right: 6px solid transparent;
 						border-top: 9px solid #e5e5e5;
-						@media($XL){
+						@media ($XL) {
 							left: -20px;
 						}
 					}
@@ -205,7 +208,7 @@ header {
 				}
 				li {
 					&.current_page_item {
-						margin-left: 0 !important;
+						margin: 0 !important;
 					}
 					margin: 0;
 
