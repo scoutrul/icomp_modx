@@ -4590,7 +4590,7 @@ footer {
   display: flex;
   margin: 0 10px;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   min-width: 100vw;
   height: 100vh;
   line-height: 163%;
@@ -4602,7 +4602,7 @@ footer {
     max-width: 400px;
     padding: 40px 0px;
     box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.619608);
-    margin: auto; }
+    margin: 10vh 0; }
     .modal-dialog .modal-content .modal-header {
       padding: 0 20px;
       border: none; }
@@ -4640,7 +4640,7 @@ footer {
         .modal-dialog .modal-content .modal-body .form-group textarea {
           min-height: 150px;
           line-height: 129%;
-          padding: 10px;
+          padding: 20px 10px;
           border: solid 1px #f2f2f2;
           resize: none; }
     .modal-dialog .modal-content button.close {
@@ -4649,6 +4649,7 @@ footer {
       color: #f03333;
       font-size: 40px;
       transform: translateY(-18px);
+      padding: 0;
       cursor: pointer; }
       .modal-dialog .modal-content button.close :hover {
         color: #222; }

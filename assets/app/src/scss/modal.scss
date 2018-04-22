@@ -1,0 +1,99 @@
+.modal-dialog {
+	position: fixed;
+	display: flex;
+	margin: 0 10px;
+	justify-content: center;
+	align-items: end;
+	min-width: 100vw;
+	height: 100vh;
+	line-height: 163%;
+	margin: auto;
+	color: #222222;
+	overflow: auto;
+
+	.modal-content {
+		width: 100%;
+		max-width: 400px;
+		padding: 40px 0px;
+		box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.6196078431372549);
+		margin: 10vh 0;
+		.modal-header {
+			padding: 0 20px;
+			border: none;
+			.modal-title {
+				font-size: 16px;
+				font-weight: 500;
+				color: #f03333;
+			}
+		}
+
+		.modal-footer {
+			padding: 0 20px;
+			border: none;
+		}
+
+		.modal-body {
+			padding: 0 20px;
+
+			.form-group {
+				display: flex;
+				margin: 20px 0;
+				flex-flow: column wrap;
+				font-size: 14px;
+				color: #9f9f9f;
+				label {
+					display: block;
+					font-size: 16px;
+					padding-bottom: 2px;
+					padding-top: 5px;
+				}
+				input {
+					display: flex;
+					flex: 1;
+					line-height: 129%;
+					padding: 20px 10px;
+					border: solid 1px #f2f2f2;
+				}
+				select {
+					line-height: 129%;
+					padding: 10px;
+					background-color: #f2f2f2;
+					border: 0;
+				}
+
+				textarea {
+					min-height: 150px;
+					line-height: 129%;
+                    padding: 20px 10px;
+					border: solid 1px #f2f2f2;
+					resize: none;
+				}
+			}
+		}
+		button.close {
+			border: 0;
+			background: none;
+			color: #f03333;
+			font-size: 40px;
+			transform: translateY(-18px);
+			padding: 0;
+			cursor: pointer;
+			:hover {
+				color: #222;
+			}
+		}
+
+		.send_button {
+			width: 200px;
+			height: 50px;
+			background-color: #f03333;
+			border: 0;
+			color: #fff;
+			font-size: 14px;
+			cursor: pointer;
+			@media ($S) {
+				margin: 20px auto;
+			}
+		}
+	}
+}

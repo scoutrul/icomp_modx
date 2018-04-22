@@ -49,23 +49,23 @@ $(function() {
 	toggleUIbyScreenWidth();
 
 	$('#send_form').on('click', function() {
-		console.log('sending');
 		var name = $('#your_name').val();
 		var tel = $('#your_tel').val();
 		var email = $('#your_email').val();
 		var theme = $('#your_theme').val();
 		var msg = $('#your_message').val();
 
-		var dataString = 'name=' + name + '&tel=' + tel + '&email=' + email + '&theme=' + theme + '&msg=' + msg;
-		console.log(dataString);
-
+		var dataString = 'fromName=' + name + '&tel=' + tel + '&from=' + email + '&subject=' + theme + '&message=' + msg;
+		
+		console.log('sending', dataString);
+		
 		$.ajax({
 			type: 'POST',
 			url: '/feedback.html', 
 			data: dataString,
 			dataType: 'html',
 			success: function() {
-				$('#send_form').html("<div id='message'></div>");
+				$('#send-form').html("<div id='message'></div>");
 				$('#message')
 					.html('<h2>Вопрос отправлен!</h2>')
 					.append('<p>Скоро мы с вами свяжемся.</p>')
@@ -73,6 +73,8 @@ $(function() {
 					.fadeIn(1500, function() {
 						$('#message').append('<i class="icon-ok"></i>');
 					});
+				$('.modal-title').hide();
+				$('#send_form').hide();
 			}
 		});
 		return false;
