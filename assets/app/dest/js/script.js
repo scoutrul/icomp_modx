@@ -3,7 +3,6 @@ $(function() {
 	var mobileScreen = 990;
 	var appScreen = $('#app').width();
 
-
 	var menu = $('#menu');
 	var burger = $('.burger');
 	var lvl = $('#menu > li');
@@ -55,13 +54,14 @@ $(function() {
 		var theme = $('#your_theme').val();
 		var msg = $('#your_message').val();
 
-		var dataString = 'fromName=' + name + '&tel=' + tel + '&from=' + email + '&subject=' + theme + '&message=' + msg;
-		
+		var dataString =
+			'fromName=' + name + '&tel=' + tel + '&from=' + email + '&subject=' + theme + '&message=' + msg;
+
 		console.log('sending', dataString);
-		
+
 		$.ajax({
 			type: 'POST',
-			url: '/feedback.html', 
+			url: '/feedback.html',
 			data: dataString,
 			dataType: 'html',
 			success: function() {
@@ -78,5 +78,17 @@ $(function() {
 			}
 		});
 		return false;
+	});
+	$(document).on('af_complete', function(event, response) {
+		if (response.success) {
+			$('.content').html("<div id='message'></div>");
+			$('#message')
+				.html('<h2>Вопрос отправлен!</h2>')
+				.append('<p>Скоро мы с вами свяжемся.</p>')
+				.hide()
+				.fadeIn(1500, function() {
+					$('#message').append('<i class="icon-ok"></i>');
+				});
+		}
 	});
 });

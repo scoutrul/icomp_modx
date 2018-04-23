@@ -4115,13 +4115,19 @@ header {
       font-size: 14px; } }
   @media (max-width: 991.98px) {
     .content {
-      padding-top: 80px; } }
+      padding: 0; } }
   .content .image {
     width: 100%;
     margin: 20px 0; }
+    @media (max-width: 767.98px) {
+      .content .image {
+        width: calc(100% + 40px);
+        margin: 0 -20px; } }
     .content .image img {
+      width: 100%;
       max-width: 100%; }
-  .content.expert .image, .content.expert h1 {
+  .content.expert .image,
+  .content.expert h1 {
     margin: 20px auto 2px 0; }
   .content .image_expert {
     display: flex;
@@ -4559,6 +4565,31 @@ footer {
     color: #FFF;
     line-height: 60px;
     padding-left: 68px; }
+
+.breadcrumb {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; }
+  @media (max-width: 991.98px) {
+    .breadcrumb {
+      margin: 0; } }
+  @media (max-width: 767.98px) {
+    .breadcrumb {
+      display: none; } }
+  .breadcrumb li {
+    font-size: 13px;
+    color: #9f9f9f; }
+    .breadcrumb li:after {
+      content: '/';
+      margin: 0 5px; }
+    .breadcrumb li:last-child:after {
+      content: ''; }
+    .breadcrumb li a {
+      color: #9f9f9f; }
+      .breadcrumb li a:hover {
+        color: #f03333; }
 
 * {
   box-sizing: inherit; }

@@ -13,18 +13,24 @@
 	@media ($S) {
 		font-size: 14px;
 	}
-	@media($M) {
-		padding-top: 80px;
+	@media ($M) {
+		padding: 0;
 	}
 	.image {
 		width: 100%;
 		margin: 20px 0;
+		@media ($S) {
+			width: calc(100% + 40px);
+			margin: 0 -20px;
+		}
 		img {
+			width: 100%;
 			max-width: 100%;
 		}
 	}
 	&.expert {
-		.image, h1 {
+		.image,
+		h1 {
 			margin: 20px auto 2px 0;
 		}
 	}
@@ -79,9 +85,9 @@
 	}
 	&.partners {
 		.item {
-			.title { 
+			.title {
 				display: flex;
-				align-items: center; 
+				align-items: center;
 				padding-left: 20px;
 			}
 		}
