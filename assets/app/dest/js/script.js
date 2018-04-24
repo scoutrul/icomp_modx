@@ -47,7 +47,7 @@ $(function() {
 	}
 	toggleUIbyScreenWidth();
 
-	$('#send_form').on('click', function() {
+	$('#send_form_button').on('click', function() {
 		var name = $('#your_name').val();
 		var tel = $('#your_tel').val();
 		var email = $('#your_email').val();
@@ -55,23 +55,23 @@ $(function() {
 		var msg = $('#your_message').val();
 
 		var dataString =
-			'fromName=' + name + '&tel=' + tel + '&from=' + email + '&subject=' + theme + '&message=' + msg;
+			'fromName=' + name + '&tel=' + tel + '&email=' + email + '&subject=' + theme + '&message=' + msg;
 
 		console.log('sending', dataString);
 
 		$.ajax({
 			type: 'POST',
-			url: '/feedback.html',
+			url: 'feedback.html',
 			data: dataString,
 			dataType: 'html',
 			success: function() {
-				$('#send-form').html("<div id='message'></div>");
-				$('#message')
-					.html('<h2>Вопрос отправлен!</h2>')
-					.append('<p>Скоро мы с вами свяжемся.</p>')
+				$('#send-form').html("<div id='message_success'></div>");
+				$('#message_success')
+					.html('<h2>Сообщение отправлено!</h2>')
+					.append('<p>Скоро мы с вами свяжемся</p>')
 					.hide()
 					.fadeIn(1500, function() {
-						$('#message').append('<i class="icon-ok"></i>');
+						$('#message_success').append('<i class="icon-ok"></i>');
 					});
 				$('.modal-title').hide();
 				$('#send_form').hide();
@@ -79,16 +79,5 @@ $(function() {
 		});
 		return false;
 	});
-	$(document).on('af_complete', function(event, response) {
-		if (response.success) {
-			$('.content').html("<div id='message'></div>");
-			$('#message')
-				.html('<h2>Вопрос отправлен!</h2>')
-				.append('<p>Скоро мы с вами свяжемся.</p>')
-				.hide()
-				.fadeIn(1500, function() {
-					$('#message').append('<i class="icon-ok"></i>');
-				});
-		}
-	});
+
 });
