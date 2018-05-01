@@ -1,30 +1,33 @@
 @import 'vars.scss';
-.breadcrumb {
-	display: flex;
-	width: 100%;
-	list-style: none;
-	padding: 0;
-	margin: 20px 0;
-	@media ($M) {
-		margin: 0;
-	}
-	@media ($S) {
-		display: none;
-	}
-	li {
-		font-size: 13px;
-		color: #9f9f9f;
-		&:after {
-			content: '/';
-			margin: 0 5px;
+.crumbs {
+	margin: 0 auto 0;
+	.breadcrumb {
+		display: flex;
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		margin: 20px 0 0;
+		@media ($M) {
+			margin: 0;
 		}
-		&:last-child:after {
-			content: '';
+		@media ($S) {
+			display: none;
 		}
-		a {
+		li {
+			font-size: 12px;
 			color: #9f9f9f;
-			&:hover {
-				color: #f03333;
+			&:after {
+				content: '/';
+				margin: 0 5px;
+			}
+			&:last-child:after {
+				content: '';
+			}
+			a {
+				color: #9f9f9f;
+				&:hover {
+					color: #f03333;
+				}
 			}
 		}
 	}

@@ -4570,30 +4570,56 @@ footer {
     line-height: 60px;
     padding-left: 68px; }
 
-.breadcrumb {
-  display: flex;
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 20px 0; }
-  @media (max-width: 991.98px) {
-    .breadcrumb {
-      margin: 0; } }
-  @media (max-width: 767.98px) {
-    .breadcrumb {
-      display: none; } }
-  .breadcrumb li {
-    font-size: 13px;
-    color: #9f9f9f; }
-    .breadcrumb li:after {
-      content: '/';
-      margin: 0 5px; }
-    .breadcrumb li:last-child:after {
-      content: ''; }
-    .breadcrumb li a {
+.crumbs {
+  margin: 0 auto 0; }
+  .crumbs .breadcrumb {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0; }
+    @media (max-width: 991.98px) {
+      .crumbs .breadcrumb {
+        margin: 0; } }
+    @media (max-width: 767.98px) {
+      .crumbs .breadcrumb {
+        display: none; } }
+    .crumbs .breadcrumb li {
+      font-size: 12px;
       color: #9f9f9f; }
-      .breadcrumb li a:hover {
-        color: #f03333; }
+      .crumbs .breadcrumb li:after {
+        content: '/';
+        margin: 0 5px; }
+      .crumbs .breadcrumb li:last-child:after {
+        content: ''; }
+      .crumbs .breadcrumb li a {
+        color: #9f9f9f; }
+        .crumbs .breadcrumb li a:hover {
+          color: #f03333; }
+
+.loader,
+.loader:after {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%; }
+
+.loader {
+  position: relative;
+  margin: 60px auto;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(230, 230, 230, 0.2);
+  border-right: 1.1em solid rgba(230, 230, 230, 0.2);
+  border-bottom: 1.1em solid rgba(230, 230, 230, 0.2);
+  border-left: 1.1em solid #e6e6e6;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear; }
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 * {
   box-sizing: inherit; }
@@ -4623,12 +4649,12 @@ footer {
 .modal-dialog {
   position: fixed;
   display: flex;
-  margin: 0 10px;
   justify-content: center;
   align-items: end;
   min-width: 100vw;
   height: 100vh;
   line-height: 163%;
+  margin: 0 10px;
   margin: auto;
   color: #222222;
   overflow: auto; }
@@ -4636,8 +4662,8 @@ footer {
     width: 100%;
     max-width: 400px;
     padding: 40px 0px;
-    box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.619608);
-    margin: 10vh 0; }
+    margin: 10vh 0;
+    box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.619608); }
     .modal-dialog .modal-content .modal-header {
       padding: 0 20px;
       border: none; }
@@ -4656,6 +4682,28 @@ footer {
         flex-flow: column wrap;
         font-size: 14px;
         color: #9f9f9f; }
+        .modal-dialog .modal-content .modal-body .form-group input,
+        .modal-dialog .modal-content .modal-body .form-group select,
+        .modal-dialog .modal-content .modal-body .form-group textarea {
+          outline: none;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400; }
+          .modal-dialog .modal-content .modal-body .form-group input.error,
+          .modal-dialog .modal-content .modal-body .form-group select.error,
+          .modal-dialog .modal-content .modal-body .form-group textarea.error {
+            border: solid 1px #f03333; }
+          .modal-dialog .modal-content .modal-body .form-group input:focus::placeholder,
+          .modal-dialog .modal-content .modal-body .form-group select:focus::placeholder,
+          .modal-dialog .modal-content .modal-body .form-group textarea:focus::placeholder {
+            color: transparent; }
+          .modal-dialog .modal-content .modal-body .form-group input::-webkit-autofill,
+          .modal-dialog .modal-content .modal-body .form-group select::-webkit-autofill,
+          .modal-dialog .modal-content .modal-body .form-group textarea::-webkit-autofill {
+            background-color: #e5e5e5; }
+          .modal-dialog .modal-content .modal-body .form-group input::placeholder,
+          .modal-dialog .modal-content .modal-body .form-group select::placeholder,
+          .modal-dialog .modal-content .modal-body .form-group textarea::placeholder {
+            color: #9f9f9f !important; }
         .modal-dialog .modal-content .modal-body .form-group label {
           display: block;
           font-size: 16px;
@@ -4672,6 +4720,15 @@ footer {
           padding: 10px;
           background-color: #f2f2f2;
           border: 0; }
+          .modal-dialog .modal-content .modal-body .form-group select:hover {
+            cursor: pointer; }
+          .modal-dialog .modal-content .modal-body .form-group select:focus, .modal-dialog .modal-content .modal-body .form-group select:hover {
+            background-color: #e5e5e5; }
+          .modal-dialog .modal-content .modal-body .form-group select option {
+            line-height: 129%;
+            background-color: #e5e5e5;
+            font-size: 14px;
+            color: #222222; }
         .modal-dialog .modal-content .modal-body .form-group textarea {
           min-height: 150px;
           line-height: 129%;
@@ -4679,13 +4736,16 @@ footer {
           border: solid 1px #f2f2f2;
           resize: none; }
     .modal-dialog .modal-content button.close {
+      padding: 0;
       border: 0;
       background: none;
       color: #f03333;
       font-size: 40px;
       transform: translateY(-18px);
-      padding: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 40px; }
       .modal-dialog .modal-content button.close :hover {
         color: #222; }
     .modal-dialog .modal-content .send_button {

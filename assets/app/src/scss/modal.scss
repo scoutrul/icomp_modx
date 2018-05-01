@@ -1,12 +1,12 @@
 .modal-dialog {
 	position: fixed;
 	display: flex;
-	margin: 0 10px;
 	justify-content: center;
 	align-items: end;
 	min-width: 100vw;
 	height: 100vh;
 	line-height: 163%;
+	margin: 0 10px;
 	margin: auto;
 	color: #222222;
 	overflow: auto;
@@ -15,8 +15,8 @@
 		width: 100%;
 		max-width: 400px;
 		padding: 40px 0px;
-		box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.6196078431372549);
 		margin: 10vh 0;
+		box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.6196078431372549);
 		.modal-header {
 			padding: 0 20px;
 			border: none;
@@ -41,6 +41,28 @@
 				flex-flow: column wrap;
 				font-size: 14px;
 				color: #9f9f9f;
+				input,
+				select,
+				textarea {
+					outline: none;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 400;
+
+					&.error {
+						border: solid 1px #f03333;
+					}
+					&:focus {
+						&::placeholder {
+							color: transparent;
+						}
+					}
+					&::-webkit-autofill {
+						background-color: #e5e5e5;
+					}
+					&::placeholder {
+						color: #9f9f9f !important;
+					}
+				}
 				label {
 					display: block;
 					font-size: 16px;
@@ -59,28 +81,44 @@
 					padding: 10px;
 					background-color: #f2f2f2;
 					border: 0;
+					&:hover {
+						cursor: pointer;
+					}
+					&:focus,
+					&:hover {
+						background-color: #e5e5e5;
+					}
+					option {
+						line-height: 129%;
+						background-color: #e5e5e5;
+						font-size: 14px;
+						color: #222222;
+					}
 				}
 
 				textarea {
 					min-height: 150px;
 					line-height: 129%;
-                    padding: 20px 10px;
+					padding: 20px 10px;
 					border: solid 1px #f2f2f2;
 					resize: none;
 				}
 			}
 		}
 		button.close {
+			padding: 0;
 			border: 0;
 			background: none;
 			color: #f03333;
 			font-size: 40px;
 			transform: translateY(-18px);
-			padding: 0;
 			cursor: pointer;
 			:hover {
 				color: #222;
 			}
+			position: absolute;
+			right: 20px;
+			top: 40px;
 		}
 
 		.send_button {
