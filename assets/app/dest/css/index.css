@@ -4152,7 +4152,7 @@ header {
   .content .slogan {
     width: 100%;
     line-height: 140%;
-    margin: 0px 0 45px;
+    margin: 0px 0 40px;
     font-size: 18px;
     color: #9f9f9f; }
   .content .text {
@@ -4685,6 +4685,7 @@ footer {
         .modal-dialog .modal-content .modal-body .form-group input,
         .modal-dialog .modal-content .modal-body .form-group select,
         .modal-dialog .modal-content .modal-body .form-group textarea {
+          transition: .3s ease;
           outline: none;
           font-family: 'Roboto', sans-serif;
           font-weight: 400; }
@@ -4718,6 +4719,7 @@ footer {
         .modal-dialog .modal-content .modal-body .form-group select {
           line-height: 129%;
           padding: 10px;
+          height: 40px;
           background-color: #f2f2f2;
           border: 0; }
           .modal-dialog .modal-content .modal-body .form-group select:hover {
