@@ -11,6 +11,12 @@
     'path' => 'D:/OSPanel/domains/localhost/core/components/autotemplate/',
     'assets_path' => '',
   ),
+  'babel' => 
+  array (
+    'name' => 'babel',
+    'path' => 'D:/OSPanel/domains/localhost/core/components/babel/',
+    'assets_path' => 'D:/OSPanel/domains/localhost/assets/components/babel/',
+  ),
   'breadcrumbs' => 
   array (
     'name' => 'breadcrumbs',
@@ -23,29 +29,23 @@
     'path' => 'D:/OSPanel/domains/localhost/core/components/collections/',
     'assets_path' => 'D:/OSPanel/domains/localhost/assets/components/collections/',
   ),
+  'contextrouter' => 
+  array (
+    'name' => 'contextrouter',
+    'path' => 'D:/OSPanel/domains/localhost/core/components/contextrouter/',
+    'assets_path' => '',
+  ),
   'core' => 
   array (
     'name' => 'core',
     'path' => 'D:/OSPanel/domains/localhost/manager/',
     'assets_path' => 'D:/OSPanel/domains/localhost/manager/assets/',
   ),
-  'databackup' => 
-  array (
-    'name' => 'databackup',
-    'path' => 'D:/OSPanel/domains/localhost/core/components/databackup/',
-    'assets_path' => '',
-  ),
   'googlesitemap' => 
   array (
     'name' => 'googlesitemap',
     'path' => 'D:/OSPanel/domains/localhost/core/components/googlesitemap/',
     'assets_path' => 'D:/OSPanel/domains/localhost/assets/components/googlesitemap/',
-  ),
-  'migx' => 
-  array (
-    'name' => 'migx',
-    'path' => 'D:/OSPanel/domains/localhost/core/components/migx/',
-    'assets_path' => 'D:/OSPanel/domains/localhost/assets/components/migx/',
   ),
   'motion' => 
   array (

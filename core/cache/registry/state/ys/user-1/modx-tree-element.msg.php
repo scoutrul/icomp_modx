@@ -21,4 +21,6 @@ return array (
   18 => '/root/n_type_tv/n_tv_category_12',
   19 => '/root/n_type_tv/n_tv_category_9',
   20 => '/root/n_type_snippet/n_snippet_category_12',
+  21 => '/root/n_type_plugin',
+  22 => '/root/n_type_plugin/n_plugin_category_16',
 );

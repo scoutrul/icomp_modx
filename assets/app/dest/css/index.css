@@ -3874,6 +3874,8 @@ header {
     flex: 0;
     padding: 0;
     order: -3; }
+    header .header_items .header_items_logo img {
+      max-width: 130px; }
   header .header_items .header_items_local,
   header .header_items .header_items_search {
     flex: 0; }
