@@ -38,8 +38,6 @@ $(function() {
 					lvl.children('.sub_nav').hide();
 					if (!$(this).children('a').attr('href')) {
 						window.location.href = $(this).attr('href');
-						$(this).toggleClass('active');
-						menu.toggleClass('active');
 					}
 				} else {
 					lvl.removeClass('active');
@@ -48,6 +46,8 @@ $(function() {
 					$(this).children('.sub_nav').show();
 					e.preventDefault();
 				}
+				$(this).toggleClass('active');
+				menu.toggleClass('active');
 
 			});
 		}
