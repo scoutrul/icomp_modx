@@ -5,6 +5,8 @@ var jade = require('gulp-jade');
 var plumber = require('gulp-plumber');
 var data = require('gulp-data');
 var fs = require('fs');
+var autoprefixer = require('gulp-autoprefixer');
+var cssmin = require('gulp-cssmin');
 
 var paths = {
 	sass: [ './src/scss/*.scss' ],
@@ -31,6 +33,11 @@ gulp.task('sass', function() {
 		.src('./src/scss/index.scss')
 		.pipe(sass())
 		.pipe(plumber())
+		.pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+		}))
+		.pipe(cssmin())
 		.pipe(gulp.dest('./dest/css'))
 		.pipe(browserSync.stream());
 });

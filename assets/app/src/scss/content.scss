@@ -12,9 +12,15 @@
 	flex-flow: row wrap;
 	@media ($S) {
 		font-size: 14px;
+		&.news, &.page {
+			padding-top: 80px;
+		}
 	}
 	@media ($M) {
 		padding: 0;
+		&.news, &.page {
+			padding-top: 40px;
+		}
 	}
 	.image {
 		width: 100%;

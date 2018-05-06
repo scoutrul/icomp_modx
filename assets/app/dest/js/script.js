@@ -5,7 +5,7 @@ $(function() {
 
 	var menu = $('#menu');
 	var burger = $('.burger');
-	var lvl = $('#menu > li');
+	var lvl = $('#menu > .head');
 
 	burger.click(function() {
 		$(this).toggleClass('active');
@@ -29,19 +29,26 @@ $(function() {
 				$(this).toggleClass('active');
 				$(this).children('.sub_nav').hide();
 			});
+			
 		} else {
 			// mobile
 			lvl.on('click', function(e) {
 				if ($(this).hasClass('active')) {
 					$(this).removeClass('active');
 					lvl.children('.sub_nav').hide();
+					if (!$(this).children('a').attr('href')) {
+						window.location.href = $(this).attr('href');
+						$(this).toggleClass('active');
+						menu.toggleClass('active');
+					}
 				} else {
 					lvl.removeClass('active');
 					$(this).addClass('active');
 					lvl.children('.sub_nav').hide();
 					$(this).children('.sub_nav').show();
+					e.preventDefault();
 				}
-				e.preventDefault();
+
 			});
 		}
 	})();
