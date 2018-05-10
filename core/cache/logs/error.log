@@ -17528,3 +17528,13 @@ Array
 
 [2018-05-03 14:23:11] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
 [2018-05-03 14:23:11] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/category
+[2018-05-10 14:10:03] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 240) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1055
+    [2] => Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'icompnof_2018.modManagerLog.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+)
+
+[2018-05-10 14:11:43] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/en/core/default
+[2018-05-10 14:14:02] (ERROR @ D:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/default

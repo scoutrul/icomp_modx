@@ -3,16 +3,18 @@ $(function() {
 	var mobileScreen = 990;
 	var appScreen = $('#app').width();
 
+	console.log(appScreen);
+
 	var menu = $('#menu');
 	var burger = $('.burger');
-	var lvl = $('#menu > .head');
+	var head = $('#menu > .head');
 
 	burger.click(function() {
 		$(this).toggleClass('active');
 		menu.toggleClass('active');
 	});
 
-	lvl.children('.sub_nav').hide();
+	head.children('.sub_nav').hide();
 
 	(function toggleUIbyScreenWidth() {
 		$(window).resize(function() {
@@ -21,41 +23,36 @@ $(function() {
 
 		if (appScreen >= mobileScreen) {
 			// desktop
-			lvl.on('mouseenter', function() {
-				$(this).toggleClass('active');
+			head.on('mouseenter', function() {
+				$(this).addClass('active');
 				$(this).children('.sub_nav').show();
 			});
-			lvl.on('mouseleave', function() {
-				$(this).toggleClass('active');
+			head.on('mouseleave', function() {
+				$(this).removeClass('active');
 				$(this).children('.sub_nav').hide();
 			});
-			
 		} else {
 			// mobile
-			lvl.on('click', function(e) {
-				if ($(this).hasClass('active')) {
-					$(this).removeClass('active');
-					lvl.children('.sub_nav').hide();
-					if (!$(this).children('a').attr('href')) {
-						window.location.href = $(this).attr('href');
-					}
-				} else {
-					lvl.removeClass('active');
-					$(this).addClass('active');
-					lvl.children('.sub_nav').hide();
+			head.on('click', function(e) {
+				var opo = $(this).children('ul').length;
+				e.preventDefault();
+				if (opo) {
+					head.children('.sub_nav').hide();
 					$(this).children('.sub_nav').show();
-					e.preventDefault();
+				} else {
+					var link = $(this).children('a').attr('href');
+					window.location.href = link;
 				}
-				$(this).toggleClass('active');
-				menu.toggleClass('active');
-
+			});
+			$('.sub_nav a').on('click', function(e) {
+				e.stopPropagation();
+				window.location.href = $(this).attr('href');
 			});
 		}
 	})();
 
 	// FEEDBACK
-	(function(){
-
+	(function() {
 		var ModalForm = $('#send-form');
 		var name = $('#your_name');
 		var tel = $('#your_tel');
@@ -64,7 +61,6 @@ $(function() {
 		var msg = $('#your_message');
 		var modalFooter = $('.modal-footer');
 		var formGroup = $('.form-group');
-
 
 		function Validator(obj) {
 			if (!obj.val()) {
@@ -75,17 +71,26 @@ $(function() {
 			return true;
 		}
 
-		$('#your_name, #your_email, #your_message').on('keydown', function(){
+		$('#your_name, #your_email, #your_message').on('keydown', function() {
 			$(this).removeClass('error');
-		})
+		});
 
 		$('#send_form_button').on('click', function() {
-			
 			if (Validator(name) && Validator(email) && Validator(msg)) {
-				var dataString ='fromName='+name.val()+'&tel='+tel.val()+'&email='+email.val()+'&subject='+theme.val()+'&message='+msg.val();
+				var dataString =
+					'fromName=' +
+					name.val() +
+					'&tel=' +
+					tel.val() +
+					'&email=' +
+					email.val() +
+					'&subject=' +
+					theme.val() +
+					'&message=' +
+					msg.val();
 				ModalForm.append("<div id='loader'></div>");
 				$('#loader').addClass('loader');
-	
+
 				formGroup.hide();
 				modalFooter.hide();
 				$('.modal-title').hide();
