@@ -1,31 +1,47 @@
-.search {
-	fieldset {
-		width: 680px;
-		height: 60px;
-		padding: 20px;
-		background-color: #ffffff;
-		box-shadow: 0 0 20px 5px rgba(236, 236, 236, 0.5);
-		margin-top: 40px;
+@import 'vars.scss';
 
-		input {
-			border: 0;
-			outline: none;
+.search {
+	max-width: 100%;
+	.content {
+		@media ($S) {
+			max-width: 100vw;
+    		padding: 0;
 		}
-		input[type=submit] {
-			width: 40px;
-			padding: 0 20px 0;
+	}
+
+	form {
+		width: 100%;
+		fieldset {
+			max-width: 680px;
+			height: 60px;
+			padding: 20px;
 			background-color: #ffffff;
-			background-image: url(../images/search-red.svg);
-			background-repeat: no-repeat;
-			background-position: center top;
-			float: left;
-		}
-		input[type=text] {
-			width: 560px;
-			line-height: 117%;
-			font-size: 18px;
-			text-align: left;
-			color: #222222;
+			box-shadow: 0 0 20px 5px rgba(236, 236, 236, 0.5);
+			margin-top: 40px;
+		
+			input {
+				border: 0;
+				outline: none;
+			}
+			input[type=submit] {
+				width: 40px;
+				padding: 0 20px 0;
+				background-color: #ffffff;
+				background-image: url(../images/search-red.svg);
+				background-repeat: no-repeat;
+				background-position: center top;
+				float: left;
+			}
+			input[type=text] {
+				max-width: 560px;
+				@media ($S) {
+					max-width: calc(100% - 40px);
+				}
+				line-height: 117%;
+				font-size: 18px;
+				text-align: left;
+				color: #222222;
+			}
 		}
 	}
 	.resultInfo {
@@ -48,6 +64,9 @@
 			overflow: hidden;
 			&:hover {
 				color: #f03333;
+			}
+			@media ($S) {
+				white-space: normal;
 			}
 		}
 		.search-result-extract {

@@ -27,7 +27,9 @@
 			flex: 1 1 25%;
 		}
 		&:last-child {
-			margin-right: -5px;
+			@media ($XL) {
+				margin-right: -5px;
+			}
 		}
 		.photo {
 			margin: -20px -20px 0 -20px;
