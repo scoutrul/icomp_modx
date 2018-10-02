@@ -1,0 +1,111 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '1ffdb6c9fbee1482ca88510e6f43568d' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnHandleRequest","priority":0,"propertyset":0}',
+        'guid' => '762c76079746e8d6f268676a7fa4e59f',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnHandleRequest',
+        ),
+        'signature' => '39db9cb7e8f67cffc09c0ae3acad4fd4',
+      ),
+      'b8a1a1726cdb84db3d1ae5f88f9e7b0a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnContextSave","priority":0,"propertyset":0}',
+        'guid' => '8bce5e7666d4a7b6c8dcff0e071b343a',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnContextSave',
+        ),
+        'signature' => '4c8e2db0fdf629bfc0a5c7abaffa3f87',
+      ),
+      'b5d4d802edbf59594e31a71ba4354269' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnContextRemove","priority":0,"propertyset":0}',
+        'guid' => '80e497155381f3f09c5f5fadcc9b0e79',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnContextRemove',
+        ),
+        'signature' => 'eb979fbeb51eb4a095b8386fdad18fa1',
+      ),
+      '6fa94d93109bdf2d5228b57192d12d45' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":0,"event":"OnSiteRefresh","priority":0,"propertyset":0}',
+        'guid' => 'c0b785051ed10f33743f4931cc92503c',
+        'native_key' => 
+        array (
+          0 => 0,
+          1 => 'OnSiteRefresh',
+        ),
+        'signature' => 'f5158a5c1c1f79c701431d97e5d46649',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'contextrouter',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd56728f73bcf3981c82dc52ed8b73a75',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => '66b0e2f9b3fb7217e29358d9072f6dac',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"ContextRouter","description":"ContextRouter is a simple plug-and-play plugin allowing you to use different contexts, and, based on the http_host context settings you need to set anyway, it routes your front-end requests as required.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/* @var modX $modx\\n * @var array $scriptProperties\\n **\\/\\n\\n$event = $modx->event->name;\\n\\nswitch ($event) {\\n    default:\\n    case \'OnHandleRequest\':\\n        if ($modx->context->key == \'mgr\') return;\\n\\n        $routes = $modx->cacheManager->get(\'contextrouter\', array());\\n\\n        if (!is_array($routes)) {\\n            \\/* @var ContextRouter $contextRouter *\\/\\n            $core_path = $modx->getOption(\'contextrouter.core_path\', null, $modx->getOption(\'core_path\').\'components\\/contextrouter\\/\') . \'model\\/\';\\n            $contextRouter = $modx->getService(\'contextrouter\',\'ContextRouter\', $core_path, $scriptProperties);\\n            if (!$contextRouter) { $modx->log(modX::LOG_LEVEL_ERROR,\'Error instantiating ContextRouter class from \' . $core_path); return; }\\n\\n            $contextRouter->buildRoutesCache();\\n            $routes = $contextRouter->getRoutes();\\n        }\\n\\n        \\/* Do the actual routing. *\\/\\n        $host = $_SERVER[\'HTTP_HOST\'];\\n        if (empty($host)) return;\\n\\n        if (array_key_exists($host, $routes)) {\\n            $modx->switchContext($routes[$host]);\\n        }\\n        break;\\n\\n    case \'OnContextSave\':\\n    case \'OnContextRemove\':\\n    case \'OnSiteRefresh\':\\n        \\/* @var ContextRouter $contextRouter *\\/\\n        $core_path = $modx->getOption(\'contextrouter.core_path\', null, $modx->getOption(\'core_path\').\'components\\/contextrouter\\/\') . \'model\\/\';\\n        $contextRouter = $modx->getService(\'contextrouter\',\'ContextRouter\', $core_path, $scriptProperties);\\n        if (!$contextRouter) { $modx->log(modX::LOG_LEVEL_ERROR,\'Error instantiating ContextRouter class from \' . $core_path); return; }\\n\\n        $contextRouter->buildRoutesCache();\\n        break;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/* @var modX $modx\\n * @var array $scriptProperties\\n **\\/\\n\\n$event = $modx->event->name;\\n\\nswitch ($event) {\\n    default:\\n    case \'OnHandleRequest\':\\n        if ($modx->context->key == \'mgr\') return;\\n\\n        $routes = $modx->cacheManager->get(\'contextrouter\', array());\\n\\n        if (!is_array($routes)) {\\n            \\/* @var ContextRouter $contextRouter *\\/\\n            $core_path = $modx->getOption(\'contextrouter.core_path\', null, $modx->getOption(\'core_path\').\'components\\/contextrouter\\/\') . \'model\\/\';\\n            $contextRouter = $modx->getService(\'contextrouter\',\'ContextRouter\', $core_path, $scriptProperties);\\n            if (!$contextRouter) { $modx->log(modX::LOG_LEVEL_ERROR,\'Error instantiating ContextRouter class from \' . $core_path); return; }\\n\\n            $contextRouter->buildRoutesCache();\\n            $routes = $contextRouter->getRoutes();\\n        }\\n\\n        \\/* Do the actual routing. *\\/\\n        $host = $_SERVER[\'HTTP_HOST\'];\\n        if (empty($host)) return;\\n\\n        if (array_key_exists($host, $routes)) {\\n            $modx->switchContext($routes[$host]);\\n        }\\n        break;\\n\\n    case \'OnContextSave\':\\n    case \'OnContextRemove\':\\n    case \'OnSiteRefresh\':\\n        \\/* @var ContextRouter $contextRouter *\\/\\n        $core_path = $modx->getOption(\'contextrouter.core_path\', null, $modx->getOption(\'core_path\').\'components\\/contextrouter\\/\') . \'model\\/\';\\n        $contextRouter = $modx->getService(\'contextrouter\',\'ContextRouter\', $core_path, $scriptProperties);\\n        if (!$contextRouter) { $modx->log(modX::LOG_LEVEL_ERROR,\'Error instantiating ContextRouter class from \' . $core_path); return; }\\n\\n        $contextRouter->buildRoutesCache();\\n        break;\\n}"}',
+);

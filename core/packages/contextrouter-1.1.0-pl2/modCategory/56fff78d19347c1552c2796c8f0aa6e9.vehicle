@@ -1,0 +1,33 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'contextrouter',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"contextrouter-1.1.0-pl2\\/modCategory\\/56fff78d19347c1552c2796c8f0aa6e9\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"contextrouter"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'be7fde70066c211c87533fb0e943b134',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '56fff78d19347c1552c2796c8f0aa6e9',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"ContextRouter"}',
+);

@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'D:/OSPanel/domains/localhost/manager/components',
+    'target' => 'return MODX_MANAGER_PATH;',
+    'name' => 'components',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'vehicle_package' => 'transport',
+  'guid' => 'a56422cf8f15d8635c2d13fbaf6ce3b0',
+  'package' => '',
+  'signature' => '5c12042a27365262b81061023f6b2d50',
+  'native_key' => 'a56422cf8f15d8635c2d13fbaf6ce3b0',
+);

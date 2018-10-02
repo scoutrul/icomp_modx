@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'localhost-180409.1102.04-2.6.1-pl/xPDOFileVehicle/9808f9c74b8a57d4c8b01b8cc924b314/',
+    'target' => 'return MODX_BASE_PATH;',
+    'name' => 'vapor-1.0.0-pl.zip',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'vehicle_package' => 'transport',
+  'guid' => '61c15fe938bc0130e038306fdcc42218',
+  'package' => '',
+  'signature' => '9808f9c74b8a57d4c8b01b8cc924b314',
+  'native_key' => '61c15fe938bc0130e038306fdcc42218',
+);

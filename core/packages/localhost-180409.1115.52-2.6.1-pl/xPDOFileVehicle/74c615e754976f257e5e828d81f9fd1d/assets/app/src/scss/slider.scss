@@ -1,0 +1,82 @@
+@import 'vars.scss'; 
+.slider {
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	.tabs {
+		position: relative;
+		bottom: 20px;
+		ol {
+			position: relative;
+			z-index: 10;
+			list-style: none;
+			bottom: 20px;
+			margin: 0;
+			left: 15px;
+			@media ($XS) {
+				margin-left: 0;
+				bottom: 10px;
+			}
+
+			li {
+				flex: 0 1 auto;
+				margin: 0 2.5px 0;
+				width: 15px;
+				height: 9px;
+				opacity: 0.35;
+				background-color: #ffffff;
+				cursor: pointer;
+				&.active {
+					opacity: 1;
+					background-color: #f03333;
+				}
+			}
+		}
+	}
+	.carousel {
+		height: 400px;
+		@media ($XS) {
+			height: 230px;
+		}
+		@media ($M) {
+			.carousel-inner {
+				min-width: 100%;
+			}
+		}
+	}
+	.carousel-inner {
+		height: 100%;
+		.carousel-item {
+			height: 100%;
+			background-size: 1280px;
+			background-position: top center;
+			.message {
+				color: #ffffff;
+				h1 {
+					width: 100%;
+					font-weight: 500;
+					font-size: 36px;
+					margin: 104px 0 32px;
+
+					@media ($XS) {
+						font-size: 18px;
+						margin: 37px 0 10px;
+					}
+				}
+				p {
+					margin: 0 0 auto;
+					min-width: 230px;
+					font-weight: 300;
+					font-size: 18px;
+					line-height: 139%;
+					@media ($XL) {
+					}
+					@media ($XS) {
+						font-size: 13px;
+						line-height: 131%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,115 @@
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 84) core_path=D:\OSPanel\domains\localhost\core/
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 85) assets_path=D:\OSPanel\domains\localhost\assets/
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 86) manager_path=D:\OSPanel\domains\localhost\manager/
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 87) base_path=D:\OSPanel\domains\localhost/
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\core\model\modx\transport\modpackagebuilder.class.php : 140) Создан новый пакет с подписью: localhost-180409.1115.52-2.6.1-pl
+[2018-04-09 11:15:52] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 187) Packaging D:/OSPanel/domains/localhost/core/components
+[2018-04-09 11:16:01] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 198) Packaging D:/OSPanel/domains/localhost/assets
+[2018-04-09 11:18:14] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 238) Packaging D:/OSPanel/domains/localhost/icomp.sql
+[2018-04-09 11:18:14] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 238) Packaging D:/OSPanel/domains/localhost/modx-2.6.2-pl.zip
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 238) Packaging D:/OSPanel/domains/localhost/README.md
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 238) Packaging D:/OSPanel/domains/localhost/vapor-1.0.0-pl.zip
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 253) Packaging vaporVehicle class
+[2018-04-09 11:18:15] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 236) PHP warning: PDOStatement::execute(): MySQL server has gone away
+[2018-04-09 11:18:15] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 236) PHP warning: PDOStatement::execute(): Error reading result set's header
+[2018-04-09 11:18:15] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 2006
+    [2] => MySQL server has gone away
+)
+
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessAction
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessActionDom
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessCategory
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessContext
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessElement
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessMenu
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessPermission
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessPolicy
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessPolicyTemplate
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessPolicyTemplateGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessResource
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessResourceGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAccessTemplateVar
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modAction
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modActionDom
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modActionField
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modActiveUser
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modCategory
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modCategoryClosure
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modChunk
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modClassMap
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modContentType
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modContext
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modContextResource
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modContextSetting
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modElementPropertySet
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modEvent
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modFormCustomizationProfile
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modFormCustomizationProfileUserGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modFormCustomizationSet
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modLexiconEntry
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modManagerLog
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modMenu
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modNamespace
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modPlugin
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modPluginEvent
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modPropertySet
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modResource
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modResourceGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modResourceGroupResource
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modSnippet
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modSystemSetting
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modTemplate
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modTemplateVar
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modTemplateVarResource
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modTemplateVarResourceGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modTemplateVarTemplate
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUser
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserProfile
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserGroup
+[2018-04-09 11:18:15] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserGroupMember
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserGroupRole
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserMessage
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modUserSetting
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 363) Packaged 0 of modWorkspace
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of registry.db.modDbRegisterMessage
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of registry.db.modDbRegisterTopic
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of registry.db.modDbRegisterQueue
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of transport.modTransportProvider
+[2018-04-09 11:18:16] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 2006
+    [2] => MySQL server has gone away
+)
+
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 395) Packaged 0 of transport.modTransportPackage
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modDashboard
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modDashboardWidget
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of modDashboardWidgetPlacement
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of sources.modAccessMediaSource
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 441) Packaged 0 of sources.modMediaSource
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of sources.modMediaSourceElement
+[2018-04-09 11:18:16] (INFO @ D:\OSPanel\domains\localhost\vapor\vapor.php : 454) Packaged 0 of sources.modMediaSourceContext
+[2018-04-09 11:18:16] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 2006
+    [2] => MySQL server has gone away
+)
+
+[2018-04-09 11:18:16] (ERROR @ D:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 1452) Error HY000 executing statement:
+INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES ('0accusgobkmaiiu6b7ae2ch7b2', 1523261896, 'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx5a6a682a004441.14252555_15acab8eaefdbb8.13187593\";modx.mgr.session.cookie.lifetime|i:0;modx.mgr.user.config|a:0:{}')
+Array
+(
+    [0] => HY000
+    [1] => 2006
+    [2] => MySQL server has gone away
+)
+
+[2018-04-09 11:18:16] (ERROR @ Unknown0) PHP warning: Unknown: Failed to write session data (user). Please verify that the current setting of session.save_path is correct (d:/ospanel/userdata/temp/)

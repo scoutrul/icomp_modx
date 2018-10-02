@@ -1,0 +1,20 @@
+@import 'vars.scss';
+.callus_button{
+	position: relative;
+	width: 212px;
+	height: 60px;
+	object-fit: contain;
+	margin: 20px 0;
+	@media($S){
+		margin: 20px auto;
+	}
+	span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 14px;
+		color: #FFF;
+		line-height: 60px;
+		padding-left: 68px;
+	}
+}

@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'localhost-180409.1121.55-2.6.1-pl/xPDOFileVehicle/3eb540e709c9b8672189ee37808917cf/',
+    'target' => 'return MODX_BASE_PATH;',
+    'name' => 'icomp.sql',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'vehicle_package' => 'transport',
+  'guid' => '15fab4ba22c64d81b39d7c2a6663c6b3',
+  'package' => '',
+  'signature' => '3eb540e709c9b8672189ee37808917cf',
+  'native_key' => '15fab4ba22c64d81b39d7c2a6663c6b3',
+);

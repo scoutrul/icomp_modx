@@ -1,0 +1,146 @@
+@import 'vars.scss';
+.cards {
+	justify-content: center;
+	width: 100%;
+	margin: 20px auto;
+
+	flex-wrap: wrap;
+
+	@media ($XL) {
+		margin-left: -10px;
+		flex-wrap: nowrap;
+	}
+	.card {
+		display: flex;
+		flex: 0 0 auto;
+		width: 100%;
+		max-width: 310px;
+		line-height: 129%;
+		padding: 20px;
+		margin: 10px;
+		font-size: 14px;
+		color: #9f9f9f;
+		background-color: #ffffff;
+		box-shadow: 0 0 20px 5px rgba(236, 236, 236, 0.5);
+		border: none;
+		@media ($XL) {
+			flex: 1 1 25%;
+		}
+		&:last-child {
+			// margin-right: 0;
+		}
+		.photo {
+			margin: -20px -20px 0 -20px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+		.image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 77px;
+			margin: 10px auto 0;
+
+			img {
+				max-height: 70%;
+			}
+		}
+		.title {
+			line-height: 20px;
+			line-height: 24px;
+			margin: 20px auto 15px auto;
+			font-size: 18px;
+			font-weight: 500;
+			color: #222222;
+			text-align: center;
+			text-decoration: none;
+		}
+		.description {
+			margin: 0 auto auto auto;
+			text-align: center;
+		}
+		.button {
+			width: 160px;
+			height: 40px;
+			line-height: 40px;
+			margin: 30px auto 10px auto;
+			border: solid 1px #f2f2f2;
+			text-align: center;
+			color: #9f9f9f;
+			&:hover {
+				color: #fff;
+				background: #f03333;
+				cursor: pointer;
+			}
+		}
+	}
+	&.experts,
+	&.uslugi {
+		@media ($XS) {
+			.card {
+				.photo,
+				.image {
+					position: absolute;
+					width: 70px;
+					height: 70px;
+					margin: 0 20px auto 0;
+					border-radius: 50%;
+					overflow: hidden;
+					img {
+						height: 100%;
+					}
+					&.image {
+						padding-bottom: 20px;
+					}
+				}
+				.title {
+					line-height: 103%;
+					padding: 5px 0;
+					margin: 0 0 0 90px;
+					font-size: 16px;
+					text-align: left;
+				}
+				.description {
+					line-height: 133%;
+					padding: 5px 0;
+					margin: 0 0 0 90px;
+					font-size: 12px;
+					text-align: left;
+				}
+				.button {
+					display: none;
+				}
+			}
+		}
+	}
+	&.contacts {
+		.card {
+			max-width: 100%;
+			.address {
+				justify-content: space-between;
+				align-items: center;
+				line-height: 163%;
+				padding: 40px 30px 20px;
+				font-size: 16px;
+				color: #222222;
+				@media ($XS) {
+					padding: 20px 0;
+					flex-flow: row wrap;
+					font-size: 14px;
+				}
+				a {
+					color: #f03333;
+				}
+				.callus_button {
+					margin: 20px 0 20px auto;
+				}
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
