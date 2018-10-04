@@ -52,14 +52,17 @@
 			}
 		}
 		.title {
-			line-height: 20px;
-			line-height: 24px;
 			margin: 20px auto 15px auto;
+			text-align: center;
+			text-decoration: none;
+			line-height: 24px;
 			font-size: 18px;
 			font-weight: 500;
 			color: #222222;
-			text-align: center;
-			text-decoration: none;
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
 		}
 		.description {
 			margin: 0 auto auto auto;
