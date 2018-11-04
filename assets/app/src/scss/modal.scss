@@ -12,32 +12,51 @@
 	overflow: auto;
 
 	.modal-content {
+		font-family: 'Roboto', sans-serif;
 		width: 100%;
 		max-width: 400px;
-		padding: 40px 0px;
+		padding: 35px 0px;
 		margin: 10vh 0;
-		box-shadow: 0 0 20px 5px rgba(17, 17, 17, 0.6196078431372549);
+		box-shadow: 0 10px 50px 5px rgba(17, 17, 17, 0.4);
 		.modal-header {
-			padding: 0 20px;
+			padding: 0 25px;
 			border: none;
+			display: flex;
 			.modal-title {
 				font-size: 16px;
 				font-weight: 500;
-				color: #f03333;
+				color: #222;
 			}
 		}
 
 		.modal-footer {
 			padding: 0 20px;
+			margin-top: 10px;
 			border: none;
 		}
 
 		.modal-body {
-			padding: 0 20px;
+			padding: 0 25px;
+
+			.modal-call {
+				.title {
+					margin-top: 30px;
+				}
+				.number {
+					height: 25px;
+					font-size: 24px;
+					font-weight: bold;
+					margin: 15px 0;
+				}
+				.grey {
+					color: #9f9f9f;
+					margin-top: 23px;
+				}
+			}
 
 			.form-group {
 				display: flex;
-				margin: 20px 0;
+				margin: 9px 0;
 				flex-flow: column wrap;
 				font-size: 14px;
 				color: #9f9f9f;
@@ -46,7 +65,6 @@
 				textarea {
 					transition: .3s ease;
 					outline: none;
-					font-family: 'Roboto', sans-serif;
 					font-weight: 400;
 
 					&.error {
@@ -69,12 +87,14 @@
 					font-size: 16px;
 					padding-bottom: 2px;
 					padding-top: 5px;
+					color: #222;
 				}
 				input {
 					display: flex;
 					flex: 1;
 					line-height: 129%;
-					padding: 20px 10px;
+					padding: 0px 10px;
+					height: 40px;
 					border: solid 1px #f2f2f2;
 				}
 				select {
@@ -83,6 +103,7 @@
 					height: 40px;
 					background-color: #f2f2f2;
 					border: 0;
+					color: #9f9f9f;
 					&:hover {
 						cursor: pointer;
 					}
@@ -99,9 +120,9 @@
 				}
 
 				textarea {
-					min-height: 150px;
+					min-height: 80px;
 					line-height: 129%;
-					padding: 20px 10px;
+					padding: 15px 10px;
 					border: solid 1px #f2f2f2;
 					resize: none;
 				}
@@ -112,15 +133,11 @@
 			border: 0;
 			background: none;
 			color: #f03333;
-			font-size: 40px;
-			transform: translateY(-18px);
+			font-size: 32px;
 			cursor: pointer;
 			:hover {
 				color: #222;
 			}
-			position: absolute;
-			right: 20px;
-			top: 40px;
 		}
 
 		.send_button {
