@@ -3,12 +3,10 @@
 	justify-content: center;
 	width: 100%;
 	margin: 20px auto;
-
 	flex-wrap: wrap;
 
 	@media ($XL) {
 		margin-left: -10px;
-		flex-wrap: nowrap;
 	}
 	.card {
 		display: flex;

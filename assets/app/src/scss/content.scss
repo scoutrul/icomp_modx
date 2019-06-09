@@ -10,6 +10,9 @@
 	text-align: left;
 	color: #222222;
 	flex-flow: row wrap;
+	&.content__experts {
+		max-width: 1360px;
+	}
 	@media ($S) {
 		font-size: 14px;
 		&.page {
